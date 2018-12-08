@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2625EE5ADE744B35C1196D7B /* libPods-SalmonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE72C20D11CA604B2AE61EE3 /* libPods-SalmonTests.a */; };
+		8545FC8729269D92CBBF82E7 /* libPods-Salmon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79727E637B08024040BAC68E /* libPods-Salmon.a */; };
+		BEB3A76C2192D59800673A6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB3A76B2192D59800673A6E /* AppDelegate.m */; };
+		BEB3A7722192D59800673A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB3A7702192D59800673A6E /* Main.storyboard */; };
+		BEB3A7742192D59A00673A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB3A7732192D59A00673A6E /* Assets.xcassets */; };
+		BEB3A7772192D59A00673A6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB3A7752192D59A00673A6E /* LaunchScreen.storyboard */; };
+		BEB3A77A2192D59A00673A6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB3A7792192D59A00673A6E /* main.m */; };
+		BEB3A7842192D59A00673A6E /* SalmonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB3A7832192D59A00673A6E /* SalmonTests.m */; };
+		BEB3A78F2192D59A00673A6E /* SalmonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB3A78E2192D59A00673A6E /* SalmonUITests.m */; };
+		BEB484E621B190E90023C13B /* SMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB484E521B190E90023C13B /* SMRootViewController.m */; };
+		BEB484EA21B191B00023C13B /* SMStartupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB484E921B191B00023C13B /* SMStartupManager.m */; };
+		BEB484FF21B6458A0023C13B /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB484FE21B6458A0023C13B /* mars.framework */; };
+		BEB4850521B6465A0023C13B /* SMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB4850421B6465A0023C13B /* SMLog.m */; };
+		BEB4850921B647F80023C13B /* LogMarsImp.mm in Sources */ = {isa = PBXBuildFile; fileRef = BEB4850821B647F80023C13B /* LogMarsImp.mm */; };
+		BEB4850B21B649310023C13B /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4850A21B649300023C13B /* libresolv.9.tbd */; };
+		BEB4850D21B6493E0023C13B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4850C21B6493E0023C13B /* SystemConfiguration.framework */; };
+		BEB4850F21B649550023C13B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4850E21B649550023C13B /* libz.tbd */; };
+		BEB4851121B649600023C13B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4851021B649600023C13B /* CoreTelephony.framework */; };
+		BEB4851321B649780023C13B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4851221B649780023C13B /* Foundation.framework */; };
+		BEB4851521B649DA0023C13B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4851421B649DA0023C13B /* libc++.tbd */; };
+		BEEAE12221B794E5001E9C15 /* MSFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12121B794E5001E9C15 /* MSFilePath.m */; };
+		BEEAE12521B7F6E7001E9C15 /* SMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12421B7F6E7001E9C15 /* SMNavigationController.m */; };
+		BEEAE12821B7F946001E9C15 /* SMMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12721B7F946001E9C15 /* SMMainTabViewController.m */; };
+		FF80C5C2E023F49104BA5B8C /* libPods-SalmonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C785E801FDADD9A2D3302658 /* libPods-SalmonUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEB3A7802192D59A00673A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEB3A75F2192D59800673A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEB3A7662192D59800673A6E;
+			remoteInfo = Salmon;
+		};
+		BEB3A78B2192D59A00673A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEB3A75F2192D59800673A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEB3A7662192D59800673A6E;
+			remoteInfo = Salmon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F4397BF0BA7D9A86F904F08 /* Pods-Salmon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salmon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Salmon/Pods-Salmon.release.xcconfig"; sourceTree = "<group>"; };
+		645D1D186AD3290B38C5ED08 /* Pods-SalmonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalmonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalmonTests/Pods-SalmonTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F6A1EB3446D1ADF2E0B83B8 /* Pods-SalmonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalmonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalmonTests/Pods-SalmonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7518A8117A75D3DB505FFCCC /* Pods-Salmon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salmon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Salmon/Pods-Salmon.debug.xcconfig"; sourceTree = "<group>"; };
+		79727E637B08024040BAC68E /* libPods-Salmon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Salmon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		861D8F5CB8ADC8AD8E847AC1 /* Pods-SalmonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalmonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalmonUITests/Pods-SalmonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BEB3A7672192D59800673A6E /* Salmon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salmon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB3A76A2192D59800673A6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEB3A76B2192D59800673A6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEB3A7712192D59800673A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEB3A7732192D59A00673A6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEB3A7762192D59A00673A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEB3A7782192D59A00673A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB3A7792192D59A00673A6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEB3A77F2192D59A00673A6E /* SalmonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalmonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB3A7832192D59A00673A6E /* SalmonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalmonTests.m; sourceTree = "<group>"; };
+		BEB3A7852192D59A00673A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB3A78A2192D59A00673A6E /* SalmonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalmonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB3A78E2192D59A00673A6E /* SalmonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalmonUITests.m; sourceTree = "<group>"; };
+		BEB3A7902192D59A00673A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB484E421B190E90023C13B /* SMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMRootViewController.h; sourceTree = "<group>"; };
+		BEB484E521B190E90023C13B /* SMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMRootViewController.m; sourceTree = "<group>"; };
+		BEB484E821B191B00023C13B /* SMStartupManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMStartupManager.h; sourceTree = "<group>"; };
+		BEB484E921B191B00023C13B /* SMStartupManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMStartupManager.m; sourceTree = "<group>"; };
+		BEB484EC21B1923D0023C13B /* SMCommomMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCommomMacros.h; sourceTree = "<group>"; };
+		BEB484EE21B193EA0023C13B /* salmon-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "salmon-prefix.pch"; sourceTree = "<group>"; };
+		BEB484FE21B6458A0023C13B /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mars.framework; path = "Salmon/PublicComponent/mars-log-iphone/mars.framework"; sourceTree = "<group>"; };
+		BEB4850321B6465A0023C13B /* SMLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMLog.h; sourceTree = "<group>"; };
+		BEB4850421B6465A0023C13B /* SMLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMLog.m; sourceTree = "<group>"; };
+		BEB4850621B647790023C13B /* SMLogProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMLogProtocol.h; sourceTree = "<group>"; };
+		BEB4850721B647F80023C13B /* LogMarsImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogMarsImp.h; sourceTree = "<group>"; };
+		BEB4850821B647F80023C13B /* LogMarsImp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LogMarsImp.mm; sourceTree = "<group>"; };
+		BEB4850A21B649300023C13B /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		BEB4850C21B6493E0023C13B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BEB4850E21B649550023C13B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BEB4851021B649600023C13B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BEB4851221B649780023C13B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEB4851421B649DA0023C13B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BEEAE11E21B790D0001E9C15 /* SMLogMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMLogMacros.h; sourceTree = "<group>"; };
+		BEEAE12021B794E5001E9C15 /* MSFilePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFilePath.h; sourceTree = "<group>"; };
+		BEEAE12121B794E5001E9C15 /* MSFilePath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFilePath.m; sourceTree = "<group>"; };
+		BEEAE12321B7F6E7001E9C15 /* SMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMNavigationController.h; sourceTree = "<group>"; };
+		BEEAE12421B7F6E7001E9C15 /* SMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMNavigationController.m; sourceTree = "<group>"; };
+		BEEAE12621B7F946001E9C15 /* SMMainTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMainTabViewController.h; sourceTree = "<group>"; };
+		BEEAE12721B7F946001E9C15 /* SMMainTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMainTabViewController.m; sourceTree = "<group>"; };
+		C785E801FDADD9A2D3302658 /* libPods-SalmonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalmonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE72C20D11CA604B2AE61EE3 /* libPods-SalmonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalmonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECEEA18B7EC4DB700B70EBE0 /* Pods-SalmonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalmonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalmonUITests/Pods-SalmonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEB3A7642192D59800673A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB4851521B649DA0023C13B /* libc++.tbd in Frameworks */,
+				BEB4851321B649780023C13B /* Foundation.framework in Frameworks */,
+				BEB4851121B649600023C13B /* CoreTelephony.framework in Frameworks */,
+				BEB4850F21B649550023C13B /* libz.tbd in Frameworks */,
+				BEB4850D21B6493E0023C13B /* SystemConfiguration.framework in Frameworks */,
+				BEB4850B21B649310023C13B /* libresolv.9.tbd in Frameworks */,
+				BEB484FF21B6458A0023C13B /* mars.framework in Frameworks */,
+				8545FC8729269D92CBBF82E7 /* libPods-Salmon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB3A77C2192D59A00673A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2625EE5ADE744B35C1196D7B /* libPods-SalmonTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB3A7872192D59A00673A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF80C5C2E023F49104BA5B8C /* libPods-SalmonUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2549D2591B737E4683F39A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB4851421B649DA0023C13B /* libc++.tbd */,
+				BEB4851221B649780023C13B /* Foundation.framework */,
+				BEB4851021B649600023C13B /* CoreTelephony.framework */,
+				BEB4850E21B649550023C13B /* libz.tbd */,
+				BEB4850C21B6493E0023C13B /* SystemConfiguration.framework */,
+				BEB4850A21B649300023C13B /* libresolv.9.tbd */,
+				BEB484FE21B6458A0023C13B /* mars.framework */,
+				79727E637B08024040BAC68E /* libPods-Salmon.a */,
+				DE72C20D11CA604B2AE61EE3 /* libPods-SalmonTests.a */,
+				C785E801FDADD9A2D3302658 /* libPods-SalmonUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEB3A75E2192D59800673A6E = {
+			isa = PBXGroup;
+			children = (
+				BEB3A7692192D59800673A6E /* Salmon */,
+				BEB3A7822192D59A00673A6E /* SalmonTests */,
+				BEB3A78D2192D59A00673A6E /* SalmonUITests */,
+				BEB3A7682192D59800673A6E /* Products */,
+				F9C183FA309957F07E3DEC51 /* Pods */,
+				2549D2591B737E4683F39A4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEB3A7682192D59800673A6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEB3A7672192D59800673A6E /* Salmon.app */,
+				BEB3A77F2192D59A00673A6E /* SalmonTests.xctest */,
+				BEB3A78A2192D59A00673A6E /* SalmonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEB3A7692192D59800673A6E /* Salmon */ = {
+			isa = PBXGroup;
+			children = (
+				BEB484E021B18EB50023C13B /* App */,
+				BEB484E121B18EC30023C13B /* Main */,
+				BEB484E721B1917E0023C13B /* StartupManager */,
+				BEB484DC21B182630023C13B /* FileSystemBrowser */,
+				BEB484F221B382EC0023C13B /* Services */,
+				BEB484EB21B192030023C13B /* Common */,
+				BEB484DF21B18E8E0023C13B /* Resouce */,
+				BEB484FD21B644C00023C13B /* PublicComponent */,
+				BEB484EF21B194E70023C13B /* Supporting Files */,
+			);
+			path = Salmon;
+			sourceTree = "<group>";
+		};
+		BEB3A7822192D59A00673A6E /* SalmonTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEB3A7832192D59A00673A6E /* SalmonTests.m */,
+				BEB3A7852192D59A00673A6E /* Info.plist */,
+			);
+			path = SalmonTests;
+			sourceTree = "<group>";
+		};
+		BEB3A78D2192D59A00673A6E /* SalmonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEB3A78E2192D59A00673A6E /* SalmonUITests.m */,
+				BEB3A7902192D59A00673A6E /* Info.plist */,
+			);
+			path = SalmonUITests;
+			sourceTree = "<group>";
+		};
+		BEB484DC21B182630023C13B /* FileSystemBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				BEB484F021B197940023C13B /* Resouce */,
+				BEB484DE21B18E610023C13B /* ViewController */,
+				BEB484DD21B18E590023C13B /* Manager */,
+			);
+			path = FileSystemBrowser;
+			sourceTree = "<group>";
+		};
+		BEB484DD21B18E590023C13B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BEB484DE21B18E610023C13B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BEB484DF21B18E8E0023C13B /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				BEB3A7732192D59A00673A6E /* Assets.xcassets */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		BEB484E021B18EB50023C13B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BEB3A7792192D59A00673A6E /* main.m */,
+				BEB3A76A2192D59800673A6E /* AppDelegate.h */,
+				BEB3A76B2192D59800673A6E /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BEB484E121B18EC30023C13B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BEB484E221B18FCF0023C13B /* Resource */,
+				BEB484E321B18FE10023C13B /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BEB484E221B18FCF0023C13B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BEB3A7702192D59800673A6E /* Main.storyboard */,
+				BEB3A7752192D59A00673A6E /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BEB484E321B18FE10023C13B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEB484E421B190E90023C13B /* SMRootViewController.h */,
+				BEB484E521B190E90023C13B /* SMRootViewController.m */,
+				BEEAE12321B7F6E7001E9C15 /* SMNavigationController.h */,
+				BEEAE12421B7F6E7001E9C15 /* SMNavigationController.m */,
+				BEEAE12621B7F946001E9C15 /* SMMainTabViewController.h */,
+				BEEAE12721B7F946001E9C15 /* SMMainTabViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BEB484E721B1917E0023C13B /* StartupManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEB484E821B191B00023C13B /* SMStartupManager.h */,
+				BEB484E921B191B00023C13B /* SMStartupManager.m */,
+			);
+			path = StartupManager;
+			sourceTree = "<group>";
+		};
+		BEB484EB21B192030023C13B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BEEAE11F21B7931C001E9C15 /* AppHelpers */,
+				BEB484F121B2050C0023C13B /* Log */,
+				BEB484EC21B1923D0023C13B /* SMCommomMacros.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BEB484EF21B194E70023C13B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEB3A7782192D59A00673A6E /* Info.plist */,
+				BEB484EE21B193EA0023C13B /* salmon-prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEB484F021B197940023C13B /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		BEB484F121B2050C0023C13B /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				BEEAE11E21B790D0001E9C15 /* SMLogMacros.h */,
+				BEB4850321B6465A0023C13B /* SMLog.h */,
+				BEB4850421B6465A0023C13B /* SMLog.m */,
+				BEB4850621B647790023C13B /* SMLogProtocol.h */,
+				BEB4850721B647F80023C13B /* LogMarsImp.h */,
+				BEB4850821B647F80023C13B /* LogMarsImp.mm */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		BEB484F221B382EC0023C13B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BEB484F321B383270023C13B /* ServiceCenter */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BEB484F321B383270023C13B /* ServiceCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceCenter;
+			sourceTree = "<group>";
+		};
+		BEB484FD21B644C00023C13B /* PublicComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PublicComponent;
+			sourceTree = "<group>";
+		};
+		BEEAE11F21B7931C001E9C15 /* AppHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				BEEAE12021B794E5001E9C15 /* MSFilePath.h */,
+				BEEAE12121B794E5001E9C15 /* MSFilePath.m */,
+			);
+			path = AppHelpers;
+			sourceTree = "<group>";
+		};
+		F9C183FA309957F07E3DEC51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7518A8117A75D3DB505FFCCC /* Pods-Salmon.debug.xcconfig */,
+				4F4397BF0BA7D9A86F904F08 /* Pods-Salmon.release.xcconfig */,
+				6F6A1EB3446D1ADF2E0B83B8 /* Pods-SalmonTests.debug.xcconfig */,
+				645D1D186AD3290B38C5ED08 /* Pods-SalmonTests.release.xcconfig */,
+				ECEEA18B7EC4DB700B70EBE0 /* Pods-SalmonUITests.debug.xcconfig */,
+				861D8F5CB8ADC8AD8E847AC1 /* Pods-SalmonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEB3A7662192D59800673A6E /* Salmon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB3A7932192D59A00673A6E /* Build configuration list for PBXNativeTarget "Salmon" */;
+			buildPhases = (
+				C325BFE428AA728896F4C155 /* [CP] Check Pods Manifest.lock */,
+				BEB3A7632192D59800673A6E /* Sources */,
+				BEB3A7642192D59800673A6E /* Frameworks */,
+				BEB3A7652192D59800673A6E /* Resources */,
+				BEB3A79F219419D600673A6E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Salmon;
+			productName = Salmon;
+			productReference = BEB3A7672192D59800673A6E /* Salmon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEB3A77E2192D59A00673A6E /* SalmonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB3A7962192D59A00673A6E /* Build configuration list for PBXNativeTarget "SalmonTests" */;
+			buildPhases = (
+				EBA5418257E6EAC897D9BB8F /* [CP] Check Pods Manifest.lock */,
+				BEB3A77B2192D59A00673A6E /* Sources */,
+				BEB3A77C2192D59A00673A6E /* Frameworks */,
+				BEB3A77D2192D59A00673A6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEB3A7812192D59A00673A6E /* PBXTargetDependency */,
+			);
+			name = SalmonTests;
+			productName = SalmonTests;
+			productReference = BEB3A77F2192D59A00673A6E /* SalmonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEB3A7892192D59A00673A6E /* SalmonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB3A7992192D59A00673A6E /* Build configuration list for PBXNativeTarget "SalmonUITests" */;
+			buildPhases = (
+				B0A4C4AFC551A25C3E648744 /* [CP] Check Pods Manifest.lock */,
+				BEB3A7862192D59A00673A6E /* Sources */,
+				BEB3A7872192D59A00673A6E /* Frameworks */,
+				BEB3A7882192D59A00673A6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEB3A78C2192D59A00673A6E /* PBXTargetDependency */,
+			);
+			name = SalmonUITests;
+			productName = SalmonUITests;
+			productReference = BEB3A78A2192D59A00673A6E /* SalmonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEB3A75F2192D59800673A6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "周正炎";
+				TargetAttributes = {
+					BEB3A7662192D59800673A6E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BEB3A77E2192D59A00673A6E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BEB3A7662192D59800673A6E;
+					};
+					BEB3A7892192D59A00673A6E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BEB3A7662192D59800673A6E;
+					};
+				};
+			};
+			buildConfigurationList = BEB3A7622192D59800673A6E /* Build configuration list for PBXProject "Salmon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEB3A75E2192D59800673A6E;
+			productRefGroup = BEB3A7682192D59800673A6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEB3A7662192D59800673A6E /* Salmon */,
+				BEB3A77E2192D59A00673A6E /* SalmonTests */,
+				BEB3A7892192D59A00673A6E /* SalmonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEB3A7652192D59800673A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB3A7772192D59A00673A6E /* LaunchScreen.storyboard in Resources */,
+				BEB3A7742192D59A00673A6E /* Assets.xcassets in Resources */,
+				BEB3A7722192D59800673A6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB3A77D2192D59A00673A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB3A7882192D59A00673A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0A4C4AFC551A25C3E648744 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalmonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB3A79F219419D600673A6E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"822289e49c\"\n# #\nBUGLY_APP_KEY=\"73712670-2806-449d-bd36-7b4098bebc07\"\n# #\nBUNDLE_IDENTIFIER=\"jm.Salmon\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\n# UPLOAD_DEBUG_SYMBOLS=0\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\nUPLOAD_SIMULATOR_SYMBOLS=1\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\necho \"--------------------------------\"\necho \"${1}\"\necho \"--------------------------------\"\nexit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\nP_APP_ID=\"$1\"\nP_APP_KEY=\"$2\"\nP_APP_BUNDLE_ID=\"$3\"\nP_APP_VERSION=\"$4\"\nP_BSYMBOL_ZIP_FILE=\"$5\"\n\n#\nP_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\nP_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\nP_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n\nDSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\necho \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n\necho \"-----------------------------\"\nSTATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\necho \"-----------------------------\"\n\nUPLOAD_RESULT=\"FAILTURE\"\necho \"Bugly server response: ${STATUS}\"\nif [ ! \"${STATUS}\" ]; then\necho \"Error: Failed to upload the zip archive file.\"\nelif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\necho \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\nUPLOAD_RESULT=\"SUCCESS\"\nelse\necho \"Error: Failed to upload the zip archive file to Bugly.\"\nfi\n\n#Remove temp dSYM archive\n#echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n#/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n\nif [ \"$?\" -ne 0 ]; then\nexitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\nfi\n\necho \"--------------------------------\"\necho \"${UPLOAD_RESULT} - dSYM upload complete.\"\n\nif [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\necho \"--------------------------------\"\necho \"Failed to upload the dSYM\"\necho \"Please check the script and try it again.\"\nfi\n}\n\n# .dSYM解析为bSYMBOL文件\nfunction dSYMParse() {\nDSYM_FILE=\"$1\"\nDSYM_SYMBOL_FILE=\"$2\"\n\necho \"--------------------------------\"\necho \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n(/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\necho \"--------------------------------\"\n\n}\n\n# 执行\nfunction run() {\n\nCONFIG_BUGLY_APP_ID=\"$1\"\nCONFIG_BUGLY_APP_KEY=\"$2\"\n\nCONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\nCONFIG_BUGLY_APP_VERSION=\"$4\"\nCONFIG_DSYM_SOURCE_DIR=\"$5\"\nCONFIG_DSYM_DEST_DIR=\"$6\"\nCONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n\n# 检查必须参数是否设置\nif [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\nexitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\nfi\n\nif [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\nexitWithMessage \"Error: Bugly App ID not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\nexitWithMessage \"Error: Bugly App Key not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\nexitWithMessage \"Error: Bundle Identifier not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\nexitWithMessage \"Error: App Version not defined.\" 0\nfi\n\nif [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\nexitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\nfi\n\nif [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\nexitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\nfi\n\nif [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\nmkdir ${CONFIG_DSYM_DEST_DIR}\nfi\n\nDSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\nIFS=$'\\n'\n\necho \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\nRET=\"F\"\n\n#\nfor dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\nRET=\"T\"\necho \"Found dSYM file: $dsymFile\"\n\nDSYM_FILE_NAME=${dsymFile##*/}\nDSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\nDSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\nDSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n\nif [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\nif [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\nrm -f $DSYM_SYMBOL_ZIP_FILE\nfi\n# 如果只上传dSYM，直接压缩dSYM目录\nzip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\nelse\n# 使用符号表工具来生成Symbol文件\ndSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\nfi\n\n# 上传\ndSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\ndone\n\nif [ $RET = \"F\" ]; then\nexitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\nfi\n}\n\n# 在Xcode工程中执行\nfunction runInXcode(){\necho \"Uploading dSYM to Bugly in Xcode ...\"\n\necho \"Info.Plist : ${INFOPLIST_FILE}\"\n\nBUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\nBUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n# 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\nif [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\nBUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\nelse\nBUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\nfi\n\necho \"--------------------------------\"\necho \"Prepare application information.\"\necho \"--------------------------------\"\n\necho \"Product Name: ${PRODUCT_NAME}\"\necho \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\necho \"Version: ${BUNDLE_SHORT_VERSION}\"\necho \"Build: ${BUNDLE_VERSION}\"\n\necho \"Bugly App ID: ${BUGLY_APP_ID}\"\necho \"Bugly App key: ${BUGLY_APP_KEY}\"\necho \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\necho \"--------------------------------\"\necho \"Check the arguments ...\"\n\n##检查模拟器编译是否允许上传符号\nif [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\nif [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否是Release模式编译\nif [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\nif [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否Archive操作\nif [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\nif [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\necho \"Archive the package\"\nelse\nexitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\nfi\nfi\n\n#\nrun ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n}\n\n# 根据Xcode的环境变量判断是否处于Xcode环境\nINFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n\nBuildInXcode=\"F\"\nif [ -f \"${INFO_PLIST_FILE}\" ]; then\nBuildInXcode=\"T\"\nfi\n\nif [ $BuildInXcode = \"T\" ]; then\nrunInXcode\nelse\necho \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n# 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\nBUGLY_APP_ID=\"$1\"\nBUGLY_APP_KEY=\"$2\"\nBUNDLE_IDENTIFIER=\"$3\"\nBUGLY_APP_VERSION=\"$4\"\nDWARF_DSYM_FOLDER_PATH=\"$5\"\nSYMBOL_OUTPUT_PATH=\"$6\"\nUPLOAD_DSYM_ONLY=$7\nrun ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\nfi\n\n";
+		};
+		C325BFE428AA728896F4C155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Salmon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA5418257E6EAC897D9BB8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalmonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEB3A7632192D59800673A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEAE12221B794E5001E9C15 /* MSFilePath.m in Sources */,
+				BEB3A77A2192D59A00673A6E /* main.m in Sources */,
+				BEB3A76C2192D59800673A6E /* AppDelegate.m in Sources */,
+				BEB4850521B6465A0023C13B /* SMLog.m in Sources */,
+				BEB484E621B190E90023C13B /* SMRootViewController.m in Sources */,
+				BEB484EA21B191B00023C13B /* SMStartupManager.m in Sources */,
+				BEEAE12821B7F946001E9C15 /* SMMainTabViewController.m in Sources */,
+				BEB4850921B647F80023C13B /* LogMarsImp.mm in Sources */,
+				BEEAE12521B7F6E7001E9C15 /* SMNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB3A77B2192D59A00673A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB3A7842192D59A00673A6E /* SalmonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB3A7862192D59A00673A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB3A78F2192D59A00673A6E /* SalmonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEB3A7812192D59A00673A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEB3A7662192D59800673A6E /* Salmon */;
+			targetProxy = BEB3A7802192D59A00673A6E /* PBXContainerItemProxy */;
+		};
+		BEB3A78C2192D59A00673A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEB3A7662192D59800673A6E /* Salmon */;
+			targetProxy = BEB3A78B2192D59A00673A6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEB3A7702192D59800673A6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEB3A7712192D59800673A6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEB3A7752192D59A00673A6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEB3A7762192D59A00673A6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEB3A7912192D59A00673A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEB3A7922192D59A00673A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEB3A7942192D59A00673A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7518A8117A75D3DB505FFCCC /* Pods-Salmon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 374V37FD2E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Salmon/PublicComponent/mars-log-iphone",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Salmon/salmon-prefix.pch";
+				INFOPLIST_FILE = Salmon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jm.Salmon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEB3A7952192D59A00673A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4397BF0BA7D9A86F904F08 /* Pods-Salmon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 374V37FD2E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Salmon/PublicComponent/mars-log-iphone",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Salmon/salmon-prefix.pch";
+				INFOPLIST_FILE = Salmon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jm.Salmon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEB3A7972192D59A00673A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F6A1EB3446D1ADF2E0B83B8 /* Pods-SalmonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 374V37FD2E;
+				INFOPLIST_FILE = SalmonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jm.SalmonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salmon.app/Salmon";
+			};
+			name = Debug;
+		};
+		BEB3A7982192D59A00673A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645D1D186AD3290B38C5ED08 /* Pods-SalmonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 374V37FD2E;
+				INFOPLIST_FILE = SalmonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jm.SalmonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salmon.app/Salmon";
+			};
+			name = Release;
+		};
+		BEB3A79A2192D59A00673A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECEEA18B7EC4DB700B70EBE0 /* Pods-SalmonUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 374V37FD2E;
+				INFOPLIST_FILE = SalmonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jm.SalmonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Salmon;
+			};
+			name = Debug;
+		};
+		BEB3A79B2192D59A00673A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 861D8F5CB8ADC8AD8E847AC1 /* Pods-SalmonUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 374V37FD2E;
+				INFOPLIST_FILE = SalmonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jm.SalmonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Salmon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEB3A7622192D59800673A6E /* Build configuration list for PBXProject "Salmon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB3A7912192D59A00673A6E /* Debug */,
+				BEB3A7922192D59A00673A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB3A7932192D59A00673A6E /* Build configuration list for PBXNativeTarget "Salmon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB3A7942192D59A00673A6E /* Debug */,
+				BEB3A7952192D59A00673A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB3A7962192D59A00673A6E /* Build configuration list for PBXNativeTarget "SalmonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB3A7972192D59A00673A6E /* Debug */,
+				BEB3A7982192D59A00673A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB3A7992192D59A00673A6E /* Build configuration list for PBXNativeTarget "SalmonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB3A79A2192D59A00673A6E /* Debug */,
+				BEB3A79B2192D59A00673A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEB3A75F2192D59800673A6E /* Project object */;
+}

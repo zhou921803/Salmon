@@ -1,0 +1,17 @@
+//
+//  salmon-prefix.pch
+//  Salmon
+//
+//  Created by 周正炎 on 2018/11/30.
+//  Copyright © 2018 周正炎. All rights reserved.
+//
+
+#ifndef salmon_prefix_pch
+#define salmon_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "SMCommomMacros.h"
+#import "SMLogMacros.h"
+
+#endif /* salmon_prefix_pch */
