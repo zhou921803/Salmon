@@ -10,6 +10,12 @@
 #import "AppDelegate.h"
 
 #import "SMStartupManager.h"
+#import "SMRootViewController.h"
+#import "SMNavigationController.h"
+#import "SMMainTabViewController.h"
+#import "SMFileBrowserViewController.h"
+#import "SMSettingOptionViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -24,6 +30,8 @@
     
     [SINGLETON_OBJECT(SMStartupManager) setupBeforeLaunch];
     [SINGLETON_OBJECT(SMStartupManager) setupWithOptions:launchOptions];
+    
+    [self setupViewController];
     
     
     return YES;
@@ -69,8 +77,41 @@
 }
 
 #pragma mark - Private
-- (void)setupMainViewController
+/**
+ * 设置ViewController
+ */
+- (void)setupViewController
 {
+    //根控制器
+    SMRootViewController *rootViewController = (SMRootViewController *)self.window.rootViewController;
     
+    SMMainTabViewController *mainTabViewController = [self createMainTabViewControllerContent];
+
+    //navigation控制器
+    SMNavigationController *navigationController = [[SMNavigationController alloc] initWithRootViewController:mainTabViewController];
+    
+    [navigationController willMoveToParentViewController:self.window.rootViewController];
+    [self.window.rootViewController addChildViewController:navigationController];
+    navigationController.view.frame = rootViewController.view.bounds;
+    [rootViewController.view addSubview:navigationController.view];
+    [navigationController didMoveToParentViewController:self.window.rootViewController];
+    
+    
+}
+
+- (SMMainTabViewController*)createMainTabViewControllerContent
+{
+    //tabBar控制器
+    SMMainTabViewController *mainTabViewController = [[SMMainTabViewController alloc] init];
+    
+    SMFileBrowserViewController *fileBrowserViewController = [[SMFileBrowserViewController alloc] init];
+    fileBrowserViewController.tabBarItem.title = @"我的文件";
+    [mainTabViewController addChildViewController:fileBrowserViewController];
+    
+    SMSettingOptionViewController *settingOptionViewController = [[SMSettingOptionViewController alloc] init];
+    settingOptionViewController.tabBarItem.title = @"设置";
+    [mainTabViewController addChildViewController:settingOptionViewController];
+    
+    return mainTabViewController;
 }
 @end

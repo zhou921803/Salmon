@@ -30,6 +30,9 @@
 		BEEAE12221B794E5001E9C15 /* MSFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12121B794E5001E9C15 /* MSFilePath.m */; };
 		BEEAE12521B7F6E7001E9C15 /* SMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12421B7F6E7001E9C15 /* SMNavigationController.m */; };
 		BEEAE12821B7F946001E9C15 /* SMMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12721B7F946001E9C15 /* SMMainTabViewController.m */; };
+		BEEAE12C21BB62D4001E9C15 /* SMNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12B21BB62D4001E9C15 /* SMNavigationManager.m */; };
+		BEEAE13521BBF27C001E9C15 /* SMFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE13421BBF27C001E9C15 /* SMFileBrowserViewController.m */; };
+		BEEAE13C21BBF542001E9C15 /* SMSettingOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE13B21BBF542001E9C15 /* SMSettingOptionViewController.m */; };
 		FF80C5C2E023F49104BA5B8C /* libPods-SalmonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C785E801FDADD9A2D3302658 /* libPods-SalmonUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +99,12 @@
 		BEEAE12421B7F6E7001E9C15 /* SMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMNavigationController.m; sourceTree = "<group>"; };
 		BEEAE12621B7F946001E9C15 /* SMMainTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMainTabViewController.h; sourceTree = "<group>"; };
 		BEEAE12721B7F946001E9C15 /* SMMainTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMainTabViewController.m; sourceTree = "<group>"; };
+		BEEAE12A21BB62D4001E9C15 /* SMNavigationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMNavigationManager.h; sourceTree = "<group>"; };
+		BEEAE12B21BB62D4001E9C15 /* SMNavigationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMNavigationManager.m; sourceTree = "<group>"; };
+		BEEAE13321BBF27C001E9C15 /* SMFileBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFileBrowserViewController.h; sourceTree = "<group>"; };
+		BEEAE13421BBF27C001E9C15 /* SMFileBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFileBrowserViewController.m; sourceTree = "<group>"; };
+		BEEAE13A21BBF542001E9C15 /* SMSettingOptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSettingOptionViewController.h; sourceTree = "<group>"; };
+		BEEAE13B21BBF542001E9C15 /* SMSettingOptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSettingOptionViewController.m; sourceTree = "<group>"; };
 		C785E801FDADD9A2D3302658 /* libPods-SalmonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalmonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE72C20D11CA604B2AE61EE3 /* libPods-SalmonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalmonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEEA18B7EC4DB700B70EBE0 /* Pods-SalmonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalmonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalmonUITests/Pods-SalmonUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,10 +190,11 @@
 				BEB484E021B18EB50023C13B /* App */,
 				BEB484E121B18EC30023C13B /* Main */,
 				BEB484E721B1917E0023C13B /* StartupManager */,
-				BEB484DC21B182630023C13B /* FileSystemBrowser */,
+				BEB484DC21B182630023C13B /* FileBrowser */,
+				BEEAE13621BBF46E001E9C15 /* SettingOption */,
 				BEB484F221B382EC0023C13B /* Services */,
 				BEB484EB21B192030023C13B /* Common */,
-				BEB484DF21B18E8E0023C13B /* Resouce */,
+				BEB484DF21B18E8E0023C13B /* Resource */,
 				BEB484FD21B644C00023C13B /* PublicComponent */,
 				BEB484EF21B194E70023C13B /* Supporting Files */,
 			);
@@ -209,14 +219,14 @@
 			path = SalmonUITests;
 			sourceTree = "<group>";
 		};
-		BEB484DC21B182630023C13B /* FileSystemBrowser */ = {
+		BEB484DC21B182630023C13B /* FileBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				BEB484F021B197940023C13B /* Resouce */,
+				BEB484F021B197940023C13B /* Resource */,
 				BEB484DE21B18E610023C13B /* ViewController */,
 				BEB484DD21B18E590023C13B /* Manager */,
 			);
-			path = FileSystemBrowser;
+			path = FileBrowser;
 			sourceTree = "<group>";
 		};
 		BEB484DD21B18E590023C13B /* Manager */ = {
@@ -229,16 +239,18 @@
 		BEB484DE21B18E610023C13B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BEEAE13321BBF27C001E9C15 /* SMFileBrowserViewController.h */,
+				BEEAE13421BBF27C001E9C15 /* SMFileBrowserViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		BEB484DF21B18E8E0023C13B /* Resouce */ = {
+		BEB484DF21B18E8E0023C13B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				BEB3A7732192D59A00673A6E /* Assets.xcassets */,
 			);
-			path = Resouce;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		BEB484E021B18EB50023C13B /* App */ = {
@@ -294,6 +306,7 @@
 		BEB484EB21B192030023C13B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BEEAE12921BB62A8001E9C15 /* NavigationManager */,
 				BEEAE11F21B7931C001E9C15 /* AppHelpers */,
 				BEB484F121B2050C0023C13B /* Log */,
 				BEB484EC21B1923D0023C13B /* SMCommomMacros.h */,
@@ -310,11 +323,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BEB484F021B197940023C13B /* Resouce */ = {
+		BEB484F021B197940023C13B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Resouce;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		BEB484F121B2050C0023C13B /* Log */ = {
@@ -359,6 +372,48 @@
 				BEEAE12121B794E5001E9C15 /* MSFilePath.m */,
 			);
 			path = AppHelpers;
+			sourceTree = "<group>";
+		};
+		BEEAE12921BB62A8001E9C15 /* NavigationManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEEAE12A21BB62D4001E9C15 /* SMNavigationManager.h */,
+				BEEAE12B21BB62D4001E9C15 /* SMNavigationManager.m */,
+			);
+			path = NavigationManager;
+			sourceTree = "<group>";
+		};
+		BEEAE13621BBF46E001E9C15 /* SettingOption */ = {
+			isa = PBXGroup;
+			children = (
+				BEEAE13721BBF4B2001E9C15 /* Resource */,
+				BEEAE13821BBF50B001E9C15 /* ViewController */,
+				BEEAE13921BBF525001E9C15 /* Manager */,
+			);
+			path = SettingOption;
+			sourceTree = "<group>";
+		};
+		BEEAE13721BBF4B2001E9C15 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BEEAE13821BBF50B001E9C15 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEEAE13A21BBF542001E9C15 /* SMSettingOptionViewController.h */,
+				BEEAE13B21BBF542001E9C15 /* SMSettingOptionViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BEEAE13921BBF525001E9C15 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		F9C183FA309957F07E3DEC51 /* Pods */ = {
@@ -582,11 +637,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEAE13C21BBF542001E9C15 /* SMSettingOptionViewController.m in Sources */,
+				BEEAE13521BBF27C001E9C15 /* SMFileBrowserViewController.m in Sources */,
 				BEEAE12221B794E5001E9C15 /* MSFilePath.m in Sources */,
 				BEB3A77A2192D59A00673A6E /* main.m in Sources */,
 				BEB3A76C2192D59800673A6E /* AppDelegate.m in Sources */,
 				BEB4850521B6465A0023C13B /* SMLog.m in Sources */,
 				BEB484E621B190E90023C13B /* SMRootViewController.m in Sources */,
+				BEEAE12C21BB62D4001E9C15 /* SMNavigationManager.m in Sources */,
 				BEB484EA21B191B00023C13B /* SMStartupManager.m in Sources */,
 				BEEAE12821B7F946001E9C15 /* SMMainTabViewController.m in Sources */,
 				BEB4850921B647F80023C13B /* LogMarsImp.mm in Sources */,
