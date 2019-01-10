@@ -14,8 +14,9 @@
 #import "SMNavigationController.h"
 #import "SMMainTabViewController.h"
 #import "SMFileBrowserViewController.h"
+#import "SMMyfilesViewController.h"
 #import "SMSettingOptionViewController.h"
-
+#import "SMNavigationManager.h"
 
 @interface AppDelegate ()
 
@@ -90,13 +91,12 @@
     //navigation控制器
     SMNavigationController *navigationController = [[SMNavigationController alloc] initWithRootViewController:mainTabViewController];
     
-    [navigationController willMoveToParentViewController:self.window.rootViewController];
-    [self.window.rootViewController addChildViewController:navigationController];
+    [rootViewController addChildViewController:navigationController];
     navigationController.view.frame = rootViewController.view.bounds;
     [rootViewController.view addSubview:navigationController.view];
-    [navigationController didMoveToParentViewController:self.window.rootViewController];
+    [navigationController didMoveToParentViewController:rootViewController];
     
-    
+    [SINGLETON_OBJECT(SMNavigationManager) setupWithNavigationController:navigationController];
 }
 
 - (SMMainTabViewController*)createMainTabViewControllerContent
@@ -104,9 +104,9 @@
     //tabBar控制器
     SMMainTabViewController *mainTabViewController = [[SMMainTabViewController alloc] init];
     
-    SMFileBrowserViewController *fileBrowserViewController = [[SMFileBrowserViewController alloc] init];
-    fileBrowserViewController.tabBarItem.title = @"我的文件";
-    [mainTabViewController addChildViewController:fileBrowserViewController];
+    SMMyfilesViewController *myFilesViewController = [[SMMyfilesViewController alloc] init];
+    myFilesViewController.tabBarItem.title = @"我的文件";
+    [mainTabViewController addChildViewController:myFilesViewController];
     
     SMSettingOptionViewController *settingOptionViewController = [[SMSettingOptionViewController alloc] init];
     settingOptionViewController.tabBarItem.title = @"设置";

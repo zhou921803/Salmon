@@ -18,10 +18,6 @@ SINGLETON_DEC(SMStartupManager);
 
 - (void)setupWithOptions:(NSDictionary *)launchOptions;
 
-- (void)setupWhenRootViewDidAppear;
-
-- (void)setupDelayTasks;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -16,6 +16,8 @@ SINGLETON_DEF(SMStartupManager);
 - (void)setupBeforeLaunch
 {
     [Bugly startWithAppId:@"822289e49c"];
+    
+    [SMStartupManager setupServices];
 }
 
 - (void)setupWithOptions:(NSDictionary *)launchOptions
@@ -23,14 +25,16 @@ SINGLETON_DEF(SMStartupManager);
     
 }
 
-- (void)setupWhenRootViewDidAppear
-{
-    
-}
 
-- (void)setupDelayTasks
+
++ (void)setupServices
 {
+    SMLogInfo(@"{Start} >> Setup Services");
     
+    
+    
+    
+    SMLogInfo(@"{End} >> SetupServices");
 }
 
 @end

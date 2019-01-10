@@ -10,7 +10,6 @@
 
 @interface SMFileBrowserViewController ()
 
-@property (nonatomic, strong) UIButton *testButton;
 
 @end
 
@@ -19,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor grayColor];
     
-    [self.view addSubview:self.testButton];
+
 
 }
 
@@ -34,25 +34,7 @@
 }
 */
 
-#pragma mark - action
 
-- (void)onTestButtonClicked:(id)sender
-{
-    SMLogInfo(@"clicked testButton");
-}
-
-#pragma mark - getter
-- (UIButton*)testButton
-{
-    if(nil == _testButton)
-    {
-        _testButton = [[UIButton alloc] init];
-        _testButton.frame = CGRectMake(100, 100, 100, 50);
-        _testButton.backgroundColor = [UIColor redColor];
-        [_testButton addTarget:self action:@selector(onTestButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _testButton;
-}
 
 
 @end

@@ -7,6 +7,7 @@ target 'Salmon' do
 
   # Pods for Salmon
   pod 'Bugly', '2.5.0'
+  pod 'SVProgressHUD', '2.1.2'
 
 
   target 'SalmonTests' do

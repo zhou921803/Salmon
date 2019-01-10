@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2625EE5ADE744B35C1196D7B /* libPods-SalmonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE72C20D11CA604B2AE61EE3 /* libPods-SalmonTests.a */; };
 		8545FC8729269D92CBBF82E7 /* libPods-Salmon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79727E637B08024040BAC68E /* libPods-Salmon.a */; };
+		BEA8ABC921D8B33D000BACD7 /* SMServiceMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA8ABC821D8B33D000BACD7 /* SMServiceMediator.m */; };
 		BEB3A76C2192D59800673A6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB3A76B2192D59800673A6E /* AppDelegate.m */; };
 		BEB3A7722192D59800673A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB3A7702192D59800673A6E /* Main.storyboard */; };
 		BEB3A7742192D59A00673A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB3A7732192D59A00673A6E /* Assets.xcassets */; };
@@ -33,6 +34,10 @@
 		BEEAE12C21BB62D4001E9C15 /* SMNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12B21BB62D4001E9C15 /* SMNavigationManager.m */; };
 		BEEAE13521BBF27C001E9C15 /* SMFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE13421BBF27C001E9C15 /* SMFileBrowserViewController.m */; };
 		BEEAE13C21BBF542001E9C15 /* SMSettingOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE13B21BBF542001E9C15 /* SMSettingOptionViewController.m */; };
+		BEEAE14121BE26A6001E9C15 /* SMServiceTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE14021BE26A6001E9C15 /* SMServiceTypes.m */; };
+		BEEAE14521BE278A001E9C15 /* SMServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE14421BE278A001E9C15 /* SMServiceManager.m */; };
+		BEEAE14821BE28F3001E9C15 /* SMServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE14721BE28F3001E9C15 /* SMServiceCenter.m */; };
+		BEEAE15421C366BC001E9C15 /* SMMyfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE15321C366BB001E9C15 /* SMMyfilesViewController.m */; };
 		FF80C5C2E023F49104BA5B8C /* libPods-SalmonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C785E801FDADD9A2D3302658 /* libPods-SalmonUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +65,9 @@
 		7518A8117A75D3DB505FFCCC /* Pods-Salmon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salmon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Salmon/Pods-Salmon.debug.xcconfig"; sourceTree = "<group>"; };
 		79727E637B08024040BAC68E /* libPods-Salmon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Salmon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		861D8F5CB8ADC8AD8E847AC1 /* Pods-SalmonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalmonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalmonUITests/Pods-SalmonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BEA8ABC721D8B33D000BACD7 /* SMServiceMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMServiceMediator.h; sourceTree = "<group>"; };
+		BEA8ABC821D8B33D000BACD7 /* SMServiceMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMServiceMediator.m; sourceTree = "<group>"; };
+		BEA8ABCA21D9DB7E000BACD7 /* Salmon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salmon.entitlements; sourceTree = "<group>"; };
 		BEB3A7672192D59800673A6E /* Salmon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salmon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB3A76A2192D59800673A6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEB3A76B2192D59800673A6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +113,16 @@
 		BEEAE13421BBF27C001E9C15 /* SMFileBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFileBrowserViewController.m; sourceTree = "<group>"; };
 		BEEAE13A21BBF542001E9C15 /* SMSettingOptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSettingOptionViewController.h; sourceTree = "<group>"; };
 		BEEAE13B21BBF542001E9C15 /* SMSettingOptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSettingOptionViewController.m; sourceTree = "<group>"; };
+		BEEAE13F21BE26A6001E9C15 /* SMServiceTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMServiceTypes.h; sourceTree = "<group>"; };
+		BEEAE14021BE26A6001E9C15 /* SMServiceTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMServiceTypes.m; sourceTree = "<group>"; };
+		BEEAE14221BE26D4001E9C15 /* ISMService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMService.h; sourceTree = "<group>"; };
+		BEEAE14321BE278A001E9C15 /* SMServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMServiceManager.h; sourceTree = "<group>"; };
+		BEEAE14421BE278A001E9C15 /* SMServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMServiceManager.m; sourceTree = "<group>"; };
+		BEEAE14621BE28F3001E9C15 /* SMServiceCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMServiceCenter.h; sourceTree = "<group>"; };
+		BEEAE14721BE28F3001E9C15 /* SMServiceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMServiceCenter.m; sourceTree = "<group>"; };
+		BEEAE14921BE2A60001E9C15 /* ISMServiceEntryLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMServiceEntryLoader.h; sourceTree = "<group>"; };
+		BEEAE15221C366BB001E9C15 /* SMMyfilesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMyfilesViewController.h; sourceTree = "<group>"; };
+		BEEAE15321C366BB001E9C15 /* SMMyfilesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMyfilesViewController.m; sourceTree = "<group>"; };
 		C785E801FDADD9A2D3302658 /* libPods-SalmonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalmonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE72C20D11CA604B2AE61EE3 /* libPods-SalmonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalmonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEEA18B7EC4DB700B70EBE0 /* Pods-SalmonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalmonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalmonUITests/Pods-SalmonUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +205,7 @@
 		BEB3A7692192D59800673A6E /* Salmon */ = {
 			isa = PBXGroup;
 			children = (
+				BEA8ABCA21D9DB7E000BACD7 /* Salmon.entitlements */,
 				BEB484E021B18EB50023C13B /* App */,
 				BEB484E121B18EC30023C13B /* Main */,
 				BEB484E721B1917E0023C13B /* StartupManager */,
@@ -241,6 +260,8 @@
 			children = (
 				BEEAE13321BBF27C001E9C15 /* SMFileBrowserViewController.h */,
 				BEEAE13421BBF27C001E9C15 /* SMFileBrowserViewController.m */,
+				BEEAE15221C366BB001E9C15 /* SMMyfilesViewController.h */,
+				BEEAE15321C366BB001E9C15 /* SMMyfilesViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -354,6 +375,8 @@
 		BEB484F321B383270023C13B /* ServiceCenter */ = {
 			isa = PBXGroup;
 			children = (
+				BEEAE13D21BE135E001E9C15 /* Base */,
+				BEEAE13E21BE13AA001E9C15 /* Core */,
 			);
 			path = ServiceCenter;
 			sourceTree = "<group>";
@@ -416,6 +439,30 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		BEEAE13D21BE135E001E9C15 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BEA8ABC721D8B33D000BACD7 /* SMServiceMediator.h */,
+				BEA8ABC821D8B33D000BACD7 /* SMServiceMediator.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BEEAE13E21BE13AA001E9C15 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BEEAE14621BE28F3001E9C15 /* SMServiceCenter.h */,
+				BEEAE14721BE28F3001E9C15 /* SMServiceCenter.m */,
+				BEEAE14321BE278A001E9C15 /* SMServiceManager.h */,
+				BEEAE14421BE278A001E9C15 /* SMServiceManager.m */,
+				BEEAE13F21BE26A6001E9C15 /* SMServiceTypes.h */,
+				BEEAE14021BE26A6001E9C15 /* SMServiceTypes.m */,
+				BEEAE14221BE26D4001E9C15 /* ISMService.h */,
+				BEEAE14921BE2A60001E9C15 /* ISMServiceEntryLoader.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		F9C183FA309957F07E3DEC51 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,6 +488,7 @@
 				BEB3A7642192D59800673A6E /* Frameworks */,
 				BEB3A7652192D59800673A6E /* Resources */,
 				BEB3A79F219419D600673A6E /* ShellScript */,
+				E4FCCF139E52FDEE6CA5F706 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -500,6 +548,17 @@
 				TargetAttributes = {
 					BEB3A7662192D59800673A6E = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					BEB3A77E2192D59A00673A6E = {
 						CreatedOnToolsVersion = 10.1;
@@ -582,11 +641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-			);
-			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
@@ -610,6 +665,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FCCF139E52FDEE6CA5F706 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Salmon/Pods-Salmon-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Salmon/Pods-Salmon-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBA5418257E6EAC897D9BB8F /* [CP] Check Pods Manifest.lock */ = {
@@ -638,17 +711,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEAE13C21BBF542001E9C15 /* SMSettingOptionViewController.m in Sources */,
+				BEEAE14521BE278A001E9C15 /* SMServiceManager.m in Sources */,
 				BEEAE13521BBF27C001E9C15 /* SMFileBrowserViewController.m in Sources */,
 				BEEAE12221B794E5001E9C15 /* MSFilePath.m in Sources */,
+				BEEAE14821BE28F3001E9C15 /* SMServiceCenter.m in Sources */,
 				BEB3A77A2192D59A00673A6E /* main.m in Sources */,
 				BEB3A76C2192D59800673A6E /* AppDelegate.m in Sources */,
 				BEB4850521B6465A0023C13B /* SMLog.m in Sources */,
 				BEB484E621B190E90023C13B /* SMRootViewController.m in Sources */,
 				BEEAE12C21BB62D4001E9C15 /* SMNavigationManager.m in Sources */,
+				BEEAE14121BE26A6001E9C15 /* SMServiceTypes.m in Sources */,
 				BEB484EA21B191B00023C13B /* SMStartupManager.m in Sources */,
+				BEEAE15421C366BC001E9C15 /* SMMyfilesViewController.m in Sources */,
 				BEEAE12821B7F946001E9C15 /* SMMainTabViewController.m in Sources */,
 				BEB4850921B647F80023C13B /* LogMarsImp.mm in Sources */,
 				BEEAE12521B7F6E7001E9C15 /* SMNavigationController.m in Sources */,
+				BEA8ABC921D8B33D000BACD7 /* SMServiceMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
