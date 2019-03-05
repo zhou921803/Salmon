@@ -29,7 +29,7 @@
     // Override point for customization after application launch.
     SMLogInfo(@"application:didFinishLaunchingWithOptions");
     
-    [SINGLETON_OBJECT(SMStartupManager) setupBeforeLaunch];
+    [SINGLETON_OBJECT(SMStartupManager) setupBeforeLaunch];     //启动前的操作
     [SINGLETON_OBJECT(SMStartupManager) setupWithOptions:launchOptions];
     
     [self setupViewController];

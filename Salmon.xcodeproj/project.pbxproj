@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2625EE5ADE744B35C1196D7B /* libPods-SalmonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE72C20D11CA604B2AE61EE3 /* libPods-SalmonTests.a */; };
 		8545FC8729269D92CBBF82E7 /* libPods-Salmon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79727E637B08024040BAC68E /* libPods-Salmon.a */; };
+		BE15D7F821ECF02E00D0ED95 /* SMServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE15D7F721ECF02E00D0ED95 /* SMServices.plist */; };
+		BE15D7FC21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE15D7FB21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m */; };
 		BEA8ABC921D8B33D000BACD7 /* SMServiceMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA8ABC821D8B33D000BACD7 /* SMServiceMediator.m */; };
 		BEB3A76C2192D59800673A6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB3A76B2192D59800673A6E /* AppDelegate.m */; };
 		BEB3A7722192D59800673A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB3A7702192D59800673A6E /* Main.storyboard */; };
@@ -65,6 +67,9 @@
 		7518A8117A75D3DB505FFCCC /* Pods-Salmon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salmon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Salmon/Pods-Salmon.debug.xcconfig"; sourceTree = "<group>"; };
 		79727E637B08024040BAC68E /* libPods-Salmon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Salmon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		861D8F5CB8ADC8AD8E847AC1 /* Pods-SalmonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalmonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalmonUITests/Pods-SalmonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE15D7F721ECF02E00D0ED95 /* SMServices.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SMServices.plist; sourceTree = "<group>"; };
+		BE15D7FA21ECF37F00D0ED95 /* SMPlistEntrtyLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPlistEntrtyLoader.h; sourceTree = "<group>"; };
+		BE15D7FB21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPlistEntrtyLoader.m; sourceTree = "<group>"; };
 		BEA8ABC721D8B33D000BACD7 /* SMServiceMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMServiceMediator.h; sourceTree = "<group>"; };
 		BEA8ABC821D8B33D000BACD7 /* SMServiceMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMServiceMediator.m; sourceTree = "<group>"; };
 		BEA8ABCA21D9DB7E000BACD7 /* Salmon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salmon.entitlements; sourceTree = "<group>"; };
@@ -178,6 +183,15 @@
 				C785E801FDADD9A2D3302658 /* libPods-SalmonUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE15D7F921ECF31D00D0ED95 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				BE15D7FA21ECF37F00D0ED95 /* SMPlistEntrtyLoader.h */,
+				BE15D7FB21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		BEB3A75E2192D59800673A6E = {
@@ -368,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				BEB484F321B383270023C13B /* ServiceCenter */,
+				BE15D7F721ECF02E00D0ED95 /* SMServices.plist */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -377,6 +392,7 @@
 			children = (
 				BEEAE13D21BE135E001E9C15 /* Base */,
 				BEEAE13E21BE13AA001E9C15 /* Core */,
+				BE15D7F921ECF31D00D0ED95 /* Loader */,
 			);
 			path = ServiceCenter;
 			sourceTree = "<group>";
@@ -597,6 +613,7 @@
 			files = (
 				BEB3A7772192D59A00673A6E /* LaunchScreen.storyboard in Resources */,
 				BEB3A7742192D59A00673A6E /* Assets.xcassets in Resources */,
+				BE15D7F821ECF02E00D0ED95 /* SMServices.plist in Resources */,
 				BEB3A7722192D59800673A6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -719,6 +736,7 @@
 				BEB3A76C2192D59800673A6E /* AppDelegate.m in Sources */,
 				BEB4850521B6465A0023C13B /* SMLog.m in Sources */,
 				BEB484E621B190E90023C13B /* SMRootViewController.m in Sources */,
+				BE15D7FC21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m in Sources */,
 				BEEAE12C21BB62D4001E9C15 /* SMNavigationManager.m in Sources */,
 				BEEAE14121BE26A6001E9C15 /* SMServiceTypes.m in Sources */,
 				BEB484EA21B191B00023C13B /* SMStartupManager.m in Sources */,
