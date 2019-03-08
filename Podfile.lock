@@ -1,20 +1,115 @@
 PODS:
+  - boost (1.59.0):
+    - boost/graph-includes (= 1.59.0)
+    - boost/math-includes (= 1.59.0)
+    - boost/numeric-includes (= 1.59.0)
+    - boost/pointer_cast-includes (= 1.59.0)
+    - boost/preprocessor-includes (= 1.59.0)
+    - boost/shared_ptr-includes (= 1.59.0)
+    - boost/string_algorithms-includes (= 1.59.0)
+  - boost/graph-includes (1.59.0)
+  - boost/math-includes (1.59.0)
+  - boost/numeric-includes (1.59.0)
+  - boost/pointer_cast-includes (1.59.0)
+  - boost/preprocessor-includes (1.59.0)
+  - boost/shared_ptr-includes (1.59.0)
+  - boost/string_algorithms-includes (1.59.0)
   - Bugly (2.5.0)
+  - DoubleConversion (1.1.5)
+  - Folly (2016.09.26.00):
+    - boost
+    - DoubleConversion
+    - GLog
+  - GLog (0.3.4)
+  - React/Core (0.50.4):
+    - yoga (= 0.50.4.React)
+  - React/CxxBridge (0.50.4):
+    - Folly (= 2016.09.26.00)
+    - React/Core
+    - React/cxxreact
+  - React/cxxreact (0.50.4):
+    - boost
+    - Folly (= 2016.09.26.00)
+    - React/jschelpers
+  - React/DevSupport (0.50.4):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.50.4)
+  - React/jschelpers (0.50.4):
+    - Folly (= 2016.09.26.00)
+    - React/PrivateDatabase
+  - React/PrivateDatabase (0.50.4)
+  - React/RCTActionSheet (0.50.4):
+    - React/Core
+  - React/RCTAnimation (0.50.4):
+    - React/Core
+  - React/RCTBlob (0.50.4):
+    - React/Core
+  - React/RCTGeolocation (0.50.4):
+    - React/Core
+  - React/RCTImage (0.50.4):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.50.4):
+    - React/Core
+  - React/RCTNetwork (0.50.4):
+    - React/Core
+  - React/RCTText (0.50.4):
+    - React/Core
+  - React/RCTWebSocket (0.50.4):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
   - SVProgressHUD (2.1.2)
+  - yoga (0.50.4.React)
 
 DEPENDENCIES:
   - Bugly (= 2.5.0)
+  - DoubleConversion (from `./SalmonRN/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - Folly (from `./SalmonRN/node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - GLog (from `./SalmonRN/node_modules/react-native/third-party-podspecs/GLog.podspec`)
+  - React/Core (from `./SalmonRN/node_modules/react-native`)
+  - React/CxxBridge (from `./SalmonRN/node_modules/react-native`)
+  - React/DevSupport (from `./SalmonRN/node_modules/react-native`)
+  - React/RCTActionSheet (from `./SalmonRN/node_modules/react-native`)
+  - React/RCTAnimation (from `./SalmonRN/node_modules/react-native`)
+  - React/RCTGeolocation (from `./SalmonRN/node_modules/react-native`)
+  - React/RCTImage (from `./SalmonRN/node_modules/react-native`)
+  - React/RCTLinkingIOS (from `./SalmonRN/node_modules/react-native`)
+  - React/RCTNetwork (from `./SalmonRN/node_modules/react-native`)
+  - React/RCTText (from `./SalmonRN/node_modules/react-native`)
+  - React/RCTWebSocket (from `./SalmonRN/node_modules/react-native`)
   - SVProgressHUD (= 2.1.2)
+  - yoga (from `./SalmonRN/node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - boost
     - Bugly
     - SVProgressHUD
 
-SPEC CHECKSUMS:
-  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
-  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: "./SalmonRN/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  Folly:
+    :podspec: "./SalmonRN/node_modules/react-native/third-party-podspecs/Folly.podspec"
+  GLog:
+    :podspec: "./SalmonRN/node_modules/react-native/third-party-podspecs/GLog.podspec"
+  React:
+    :path: "./SalmonRN/node_modules/react-native"
+  yoga:
+    :path: "./SalmonRN/node_modules/react-native/ReactCommon/yoga"
 
-PODFILE CHECKSUM: 5e90101fe311e3fe20d659e30fd7685798c10346
+SPEC CHECKSUMS:
+  boost: 30a15ffb6d9aa4646dd3caffc960753f4cb4ca4e
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  DoubleConversion: ebb6747c5b66026ad4f97b789c3ceac6f18e57a6
+  Folly: b7255b29f1d693c375d642d0f04f0592181156d9
+  GLog: 3e4e4ae9746ce6bf6e9420c7fc1e08ad59c8ba1a
+  React: 541ba768b9855e10cdc76f55427a5cd0653ca806
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  yoga: 17521bbb0dd54a47c0b3ac43253e78cdac7488e0
+
+PODFILE CHECKSUM: f1efe966758895a64308afe8012781bdd59e5c97
 
 COCOAPODS: 1.5.3

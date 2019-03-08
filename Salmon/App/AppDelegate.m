@@ -17,6 +17,7 @@
 #import "SMMyfilesViewController.h"
 #import "SMSettingOptionViewController.h"
 #import "SMNavigationManager.h"
+#import <React/RCTRootView.h>
 
 @interface AppDelegate ()
 
@@ -86,17 +87,42 @@
     //根控制器
     SMRootViewController *rootViewController = (SMRootViewController *)self.window.rootViewController;
     
-    SMMainTabViewController *mainTabViewController = [self createMainTabViewControllerContent];
-
-    //navigation控制器
-    SMNavigationController *navigationController = [[SMNavigationController alloc] initWithRootViewController:mainTabViewController];
+//    UIView *view = [[UIView alloc] initWithFrame:rootViewController.view.frame];
+//    view.backgroundColor = [UIColor grayColor];
     
-    [rootViewController addChildViewController:navigationController];
-    navigationController.view.frame = rootViewController.view.bounds;
-    [rootViewController.view addSubview:navigationController.view];
-    [navigationController didMoveToParentViewController:rootViewController];
+    NSURL *jsCodeLocation = [NSURL
+                             URLWithString:@"http://172.28.29.31:8082/index.ios.bundle?platform=ios"];
+    RCTRootView *rootView =
+    [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
+                         moduleName        : @"RNHighScores"
+                         initialProperties :
+     @{
+       @"scores" : @[
+               @{
+                   @"name" : @"Alex",
+                   @"value": @"42"
+                   },
+               @{
+                   @"name" : @"Joel",
+                   @"value": @"10"
+                   }
+               ]
+       }
+                          launchOptions    : nil];
+    rootView.frame = rootViewController.view.bounds;
+    [rootViewController.view addSubview:rootView];
     
-    [SINGLETON_OBJECT(SMNavigationManager) setupWithNavigationController:navigationController];
+//    SMMainTabViewController *mainTabViewController = [self createMainTabViewControllerContent];
+//
+//    //navigation控制器
+//    SMNavigationController *navigationController = [[SMNavigationController alloc] initWithRootViewController:mainTabViewController];
+//
+//    [rootViewController addChildViewController:navigationController];
+//    navigationController.view.frame = rootViewController.view.bounds;
+//    [rootViewController.view addSubview:navigationController.view];
+//    [navigationController didMoveToParentViewController:rootViewController];
+//
+//    [SINGLETON_OBJECT(SMNavigationManager) setupWithNavigationController:navigationController];
 }
 
 - (SMMainTabViewController*)createMainTabViewControllerContent

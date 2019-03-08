@@ -8,6 +8,7 @@
 
 #import "SMServiceMediator.h"
 #import "SMServiceCenter.h"
+#import "SMPlistEntrtyLoader.h"
 
 @implementation SMServiceConfig
 @end
@@ -22,9 +23,9 @@
         [[SMServiceCenter sharedObject] registerLoader:config.customEntryLoader];
     }
     
-    //配置里面有 services plist 配置文件
+    //没有自定义的entrylLoader，但是配置里面有 services plist 配置文件
     if (config.servicesPlistPath) {
-        HYPlistEntrtyLoader* plistLoader = [[HYPlistEntrtyLoader alloc] init];
+        SMPlistEntrtyLoader* plistLoader = [[SMPlistEntrtyLoader alloc] init];
         plistLoader.filePath = config.servicesPlistPath;
         plistLoader.enableMock = config.enableMock;
         [[SMServiceCenter sharedObject] registerLoader:plistLoader];
@@ -40,8 +41,18 @@
     
     if (config.secondaryDelayLaunchServices && config.secondaryDelayLaunchServices.count) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [HYServiceMediator loadServices:config.secondaryDelayLaunchServices];
+            [SMServiceMediator loadServices:config.secondaryDelayLaunchServices];
         });
+    }
+}
+
++ (void)loadServices:(NSArray<Protocol*>*)services
+{
+    for (NSInteger i = 0; i < services.count; i++) {
+        Protocol* proto = [services objectAtIndex:i];
+        if (proto != NULL) {
+            [SMServiceCenter service:proto];
+        }
     }
 }
 

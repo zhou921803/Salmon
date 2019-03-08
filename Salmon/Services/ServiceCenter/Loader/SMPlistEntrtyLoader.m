@@ -7,6 +7,12 @@
 //
 
 #import "SMPlistEntrtyLoader.h"
+#import "SMServiceTypes.h"
+
+static NSString* kEntryImplKey     = @"impl";
+static NSString* kEntryMockImplKey = @"mockImpl";
+static NSString* kEntryProtocolKey = @"protocol";
+static NSString* kEntryTypeKey     = @"type";
 
 @implementation SMPlistEntrtyLoader
 
@@ -22,21 +28,21 @@
         return nil;
     }
     
-    HYServiceEntryConfig* config = [[HYServiceEntryConfig alloc] init];
+    SMServiceEntryConfig* config = [[SMServiceEntryConfig alloc] init];
     NSMutableArray* entryList = [NSMutableArray arrayWithCapacity:serviceList.count];
     
     for (NSDictionary* dict in serviceList) {
         NSString* clsStr = [dict objectForKey:kEntryImplKey];
         
-        if ([VersionHelper isInternalVersion]) {
-            if (self.enableMock) {
-                NSString* mockClsStr = [dict objectForKey:kEntryMockImplKey];
-                
-                if (mockClsStr && mockClsStr.length) {
-                    clsStr = mockClsStr;
-                }
-            }
-        }
+//        if ([VersionHelper isInternalVersion]) {
+//            if (self.enableMock) {
+//                NSString* mockClsStr = [dict objectForKey:kEntryMockImplKey];
+//                
+//                if (mockClsStr && mockClsStr.length) {
+//                    clsStr = mockClsStr;
+//                }
+//            }
+//        }
         
         NSString* protocolStr = [dict objectForKey:kEntryProtocolKey];
         
@@ -46,8 +52,8 @@
             
             if (cls && protocol != NULL) {
                 
-                HYServiceEntryType type = HYServiceEntryTypeShareObject;
-                HYServiceEntry* entry = [[HYServiceEntry alloc] initWithClass:cls protocol:protocol type:type];
+                SMServiceEntryType type = SMServiceEntryTypeShareObject;
+                SMServiceEntry* entry = [[SMServiceEntry alloc] initWithClass:cls protocol:protocol type:type];
                 [entryList addObject:entry];
             }
             
