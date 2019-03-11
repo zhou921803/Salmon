@@ -20,7 +20,7 @@
 {
     //配置里面有 entryLoader
     if (config.customEntryLoader) {
-        [[SMServiceCenter sharedObject] registerLoader:config.customEntryLoader];
+        [SINGLETON_OBJECT(SMServiceCenter) registerLoader:config.customEntryLoader];
     }
     
     //没有自定义的entrylLoader，但是配置里面有 services plist 配置文件
@@ -28,7 +28,7 @@
         SMPlistEntrtyLoader* plistLoader = [[SMPlistEntrtyLoader alloc] init];
         plistLoader.filePath = config.servicesPlistPath;
         plistLoader.enableMock = config.enableMock;
-        [[SMServiceCenter sharedObject] registerLoader:plistLoader];
+        [SINGLETON_OBJECT(SMServiceCenter) registerLoader:plistLoader];
     }
     
     [SMServiceMediator loadServices:config.launchServices];

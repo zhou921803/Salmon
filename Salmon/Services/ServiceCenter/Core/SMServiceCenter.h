@@ -13,6 +13,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define SMService(procol)     ((NSObject<procol> *)[SMServiceCenter service:@protocol(procol)])
+
 @interface SMServiceCenter : NSObject
 
 SINGLETON_DEC(SMServiceCenter);

@@ -9,6 +9,8 @@
 #import <Bugly/Bugly.h>
 #import "SMStartupManager.h"
 #import "SMServiceMediator.h"
+#import "ISMNetSyncProtocol.h"
+
 @implementation SMStartupManager
 
 SINGLETON_DEF(SMStartupManager);
@@ -22,7 +24,9 @@ SINGLETON_DEF(SMStartupManager);
     [Bugly startWithAppId:@"822289e49c"];
     
     //启动服务
-    [SMStartupManager setupServices];
+    [SMStartupManager setupServices]; 
+    
+    [SMService(ISMNetSyncProtocol) syncFiles];
 }
 
 /**

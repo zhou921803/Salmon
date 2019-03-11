@@ -91,7 +91,7 @@
 //    view.backgroundColor = [UIColor grayColor];
     
     NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://172.28.29.31:8082/index.ios.bundle?platform=ios"];
+                             URLWithString:@"http://192.168.1.103:8082/index.ios.bundle?platform=ios"];
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                          moduleName        : @"RNHighScores"
@@ -111,6 +111,8 @@
                           launchOptions    : nil];
     rootView.frame = rootViewController.view.bounds;
     [rootViewController.view addSubview:rootView];
+    
+    
     
 //    SMMainTabViewController *mainTabViewController = [self createMainTabViewControllerContent];
 //

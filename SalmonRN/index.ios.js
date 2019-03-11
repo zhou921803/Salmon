@@ -1,11 +1,12 @@
 "use strict";
 
 import React, { Component } from "react";
-import { AppRegistry, StyleSheet, Text, View } from "react-native";
+import { AppRegistry, StyleSheet, Text, View, NativeModules } from "react-native";
 
 class RNHighScores extends React.Component {
   
   render() {
+    NativeModules.SMTestModule.justGo();
     var contents = this.props["scores"].map(score => (
       <Text key={score.name}>
         {score.name}:{score.value}

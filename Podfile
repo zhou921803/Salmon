@@ -35,7 +35,6 @@ target 'Salmon' do
   pod'GLog', :podspec => './SalmonRN/node_modules/react-native/third-party-podspecs/GLog.podspec'
   pod'Folly', :podspec => './SalmonRN/node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-
   target 'SalmonTests' do
     inherit! :search_paths
     # Pods for testing

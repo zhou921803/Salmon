@@ -13,5 +13,6 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "SMCommomMacros.h"
 #import "SMLogMacros.h"
+#import "SMServiceCenter.h"
 
 #endif /* salmon_prefix_pch */
