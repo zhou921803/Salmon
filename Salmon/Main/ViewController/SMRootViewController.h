@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SMRootViewController : UIViewController 
 
+
+- (void)test;
 @end
 
 NS_ASSUME_NONNULL_END

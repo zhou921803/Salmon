@@ -19,6 +19,23 @@
     // Do any additional setup after loading the view.
 }
 
++ (BOOL)resolveInstanceMethod:(SEL)sel
+{
+    
+    return [super resolveInstanceMethod:sel];
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector
+{
+    return [super forwardingTargetForSelector:aSelector];
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation
+{
+    SEL sel = anInvocation.selector;
+    [self doesNotRecognizeSelector:sel];
+}
+
 /*
 #pragma mark - Navigation
 

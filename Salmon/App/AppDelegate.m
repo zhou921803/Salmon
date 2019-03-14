@@ -113,6 +113,9 @@
     [rootViewController.view addSubview:rootView];
     
     
+    [rootViewController test];
+//    [rootViewController NSSelectorFromString(@"test")];
+    
     
 //    SMMainTabViewController *mainTabViewController = [self createMainTabViewControllerContent];
 //
