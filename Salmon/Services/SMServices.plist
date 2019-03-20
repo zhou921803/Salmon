@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>protocol</key>
-		<string>ISMNetSyncProtocol</string>
+		<string>ISMWebDAVProtocol</string>
 		<key>impl</key>
-		<string>SMNetSyncManager</string>
+		<string>SMWebDAVClient</string>
 	</dict>
 </array>
 </plist>

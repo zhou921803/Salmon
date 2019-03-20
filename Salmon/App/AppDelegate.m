@@ -6,7 +6,7 @@
 //  Copyright © 2018 周正炎. All rights reserved.
 //
 
-
+#import <React/RCTRootView.h>
 #import "AppDelegate.h"
 
 #import "SMStartupManager.h"
@@ -17,9 +17,11 @@
 #import "SMMyfilesViewController.h"
 #import "SMSettingOptionViewController.h"
 #import "SMNavigationManager.h"
-#import <React/RCTRootView.h>
+#import "SMWebDAVClient.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) SMWebDAVClient *client;
 
 @end
 
@@ -35,7 +37,46 @@
     
     [self setupViewController];
     
-    
+//    NSString *root=@"https://dav.jianguoyun.com/dav";
+//    NSString *user=@"zhou921803@163.com";
+//    NSString *password=@"axwdkcia37x6j4ed";
+//
+//    self.client = [SMWebDAVClient new];
+//    [self.client configClientWith:root userName:user passWord:password localMappingPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+//
+//    [self.client getPathProperty:@"/" completion:^(NSError *error, NSArray<ISMWebDAVItem> *items) {
+//        if(!error){
+//            NSLog(@"items count %lu", (unsigned long)items.count);
+//        }
+//    }];
+//    [self.client downloadFile:@"/我的坚果云/MarkDown/TODO.md" completion:^(NSError *error, NSString *downloadedPath) {
+//        //根控制器
+//        SMRootViewController *rootViewController = (SMRootViewController *)self.window.rootViewController;
+//
+//
+//        NSURL *jsCodeLocation = [NSURL
+//                                 URLWithString:@"http://127.0.0.1:8081/index.ios.bundle?platform=ios"];
+//        RCTRootView *rootView =
+//        [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
+//                             moduleName        : @"RNHighScores"
+//                             initialProperties :
+//         @{
+//           @"scores" : @[
+//                   @{
+//                       @"name" : @"Alex",
+//                       @"value": @"42"
+//                       },
+//                   @{
+//                       @"name" : @"Joel",
+//                       @"value": @"10"
+//                       }
+//                   ],
+//           @"filePath":downloadedPath
+//           }
+//                              launchOptions    : nil];
+//        rootView.frame = rootViewController.view.bounds;
+//        [rootViewController.view addSubview:rootView];
+//    }];
     return YES;
 }
 
@@ -91,29 +132,23 @@
 //    view.backgroundColor = [UIColor grayColor];
     
     NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://192.168.1.103:8082/index.ios.bundle?platform=ios"];
+                             URLWithString:@"http://127.0.0.1:8081/index.ios.bundle?platform=ios"];
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
-                         moduleName        : @"RNHighScores"
+                         moduleName        : @"SalmonRNApp"
                          initialProperties :
      @{
-       @"scores" : @[
-               @{
-                   @"name" : @"Alex",
-                   @"value": @"42"
-                   },
-               @{
-                   @"name" : @"Joel",
-                   @"value": @"10"
-                   }
-               ]
        }
                           launchOptions    : nil];
     rootView.frame = rootViewController.view.bounds;
     [rootViewController.view addSubview:rootView];
     
     
-    [rootViewController test];
+    
+    
+    
+//    [rootViewController test];
+    
 //    [rootViewController NSSelectorFromString(@"test")];
     
     

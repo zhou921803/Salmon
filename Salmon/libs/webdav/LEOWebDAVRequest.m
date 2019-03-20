@@ -27,6 +27,7 @@
 @synthesize path=_path;
 @synthesize delegate=_delegate;
 @synthesize relativePath=_relativePath;
+@synthesize requestCompletion;
 @synthesize instance,errorAction,successAction,receiveAction,startAction;
 
 #pragma mark - Public methods
@@ -101,6 +102,11 @@
 	if ([_delegate respondsToSelector:@selector(request:didFailWithError:)]) {
 		[_delegate request:self didFailWithError:error];
 	}
+    
+    
+    if(self.requestCompletion){
+        self.requestCompletion(error, nil, self);
+    }
 	
 	[self didFinish];
 }
@@ -205,6 +211,11 @@
 		
 		[_delegate request:self didSucceedWithResult:result];
 	}
+    
+    if (self.requestCompletion) {
+        id result = [self resultForData:_data];
+        self.requestCompletion(nil, result, self);
+    }
 	
 	[self didFinish];
 }

@@ -1,25 +1,54 @@
 "use strict";
 
-import React, { Component } from "react";
-import { AppRegistry, StyleSheet, Text, View, NativeModules } from "react-native";
+import React from "react";
+import { AppRegistry, StyleSheet, Text,View, NativeModules, Menu} from "react-native";
+import SideMenu from 'react-native-side-menu';
+import SMContentView from './UIComponent/SMContentView';
+import SMSideView from './UIComponent/SMSideView';
+import Modal from 'react-native-modal'
 
-class RNHighScores extends React.Component {
+
+// import MarkPage from './markdown-render/markpage';
+import MarkdownRender from './markdown-render/markdownRender';
+import SMWebView from './UIComponent/SMWebView';
+
+
+
+class SalmonRNApp extends React.Component {
   
+  constructor(){
+    super();
+
+    this.state ={
+      isOpen:true
+    }
+
+
+  }
+
   render() {
-    NativeModules.SMTestModule.justGo();
-    var contents = this.props["scores"].map(score => (
-      <Text key={score.name}>
-        {score.name}:{score.value}
-        {"\n"}
-      </Text>
-    ));
+
+    // RNFS.readFile(this.props["filePath"]).then( (result) =>{
+    //   let mdRender = new MarkdownRender();
+    //   result = mdRender.mdRender(result);
+    //   let newStat = {
+    //     fileData:result,
+    //     isOpen:false
+    //   }
+    //   this.setState(newStat);
+    // });
+
+    const menu = <SMSideView></SMSideView>;
+
     return (
-      <View style={styles.container}>
-        <Text style={styles.highScoresTitle}>2048 High Scores!</Text>
-        <Text style={styles.scores}>{contents}</Text>
-      </View>
+      <SideMenu 
+        menu={menu} 
+        isOpen={this.state.isOpen}>
+        <SMContentView style={{flex:1, backgroundColor:"#0000F0"}} ></SMContentView>
+      </SideMenu>
     );
   }
+
 }
 
 const styles = StyleSheet.create({
@@ -27,7 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FFFFFF"
+    backgroundColor: "#FFFF00"
   },
   highScoresTitle: {
     fontSize: 20,
@@ -42,4 +71,4 @@ const styles = StyleSheet.create({
 });
 
 // 整体js模块的名称
-AppRegistry.registerComponent("RNHighScores", () => RNHighScores);
+AppRegistry.registerComponent("SalmonRNApp", () => SalmonRNApp);

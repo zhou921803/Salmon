@@ -9,7 +9,7 @@
 #import <Bugly/Bugly.h>
 #import "SMStartupManager.h"
 #import "SMServiceMediator.h"
-#import "ISMNetSyncProtocol.h"
+#import "ISMWebDAVProtocol.h"
 
 @implementation SMStartupManager
 
@@ -26,7 +26,7 @@ SINGLETON_DEF(SMStartupManager);
     //启动服务
     [SMStartupManager setupServices]; 
     
-    [SMService(ISMNetSyncProtocol) syncFiles];
+//    [SMService(ISMWebDAVProtocol) syncFiles];
 }
 
 /**

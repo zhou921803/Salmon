@@ -7,8 +7,10 @@
 //
 
 #import "LEOWebDAVBaseRequest.h"
-
+@class LEOWebDAVRequest;
 @protocol LEOWebDAVRequestDelegate;
+
+typedef void (^LEOWebDAVRequestCompletion)(NSError* error, id result, LEOWebDAVRequest *request);
 
 @interface LEOWebDAVRequest : LEOWebDAVBaseRequest
 {}
@@ -16,6 +18,7 @@
 @property(strong,readonly) NSString *path;
 @property(strong,readonly) NSString *relativePath;
 @property(assign) id<LEOWebDAVRequestDelegate> delegate;
+@property(nonatomic, copy) LEOWebDAVRequestCompletion requestCompletion;
 @property(assign) id instance;
 @property(assign) SEL errorAction;
 @property(assign) SEL successAction;

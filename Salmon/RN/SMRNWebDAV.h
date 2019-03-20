@@ -1,5 +1,5 @@
 //
-//  SMNetSyncManager.h
+//  SMTestModule.h
 //  Salmon
 //
 //  Created by 周正炎 on 2019/3/8.
@@ -7,13 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ISMNetSyncProtocol.h"
-
+#import <React/RCTBridgeModule.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SMNetSyncManager : NSObject<ISMNetSyncProtocol>
-
-SINGLETON_DEC(SMNetSyncManager)
+@interface SMRNWebDAV : NSObject<RCTBridgeModule>
 
 @end
 

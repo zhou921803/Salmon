@@ -30,6 +30,7 @@
 		BEB4851121B649600023C13B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4851021B649600023C13B /* CoreTelephony.framework */; };
 		BEB4851321B649780023C13B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4851221B649780023C13B /* Foundation.framework */; };
 		BEB4851521B649DA0023C13B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB4851421B649DA0023C13B /* libc++.tbd */; };
+		BEC170F2223B9CAB008246C7 /* SMWebDAVItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC170F1223B9CAB008246C7 /* SMWebDAVItem.m */; };
 		BEEAE12221B794E5001E9C15 /* MSFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12121B794E5001E9C15 /* MSFilePath.m */; };
 		BEEAE12521B7F6E7001E9C15 /* SMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12421B7F6E7001E9C15 /* SMNavigationController.m */; };
 		BEEAE12821B7F946001E9C15 /* SMMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE12721B7F946001E9C15 /* SMMainTabViewController.m */; };
@@ -40,8 +41,7 @@
 		BEEAE14521BE278A001E9C15 /* SMServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE14421BE278A001E9C15 /* SMServiceManager.m */; };
 		BEEAE14821BE28F3001E9C15 /* SMServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE14721BE28F3001E9C15 /* SMServiceCenter.m */; };
 		BEEAE15421C366BC001E9C15 /* SMMyfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAE15321C366BB001E9C15 /* SMMyfilesViewController.m */; };
-		BEEC19DD22325719006A1760 /* SMTestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC19DC22325719006A1760 /* SMTestModule.m */; };
-		BEEC19E82232AD16006A1760 /* SMNetSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC19E72232AD16006A1760 /* SMNetSyncManager.m */; };
+		BEEC19DD22325719006A1760 /* SMRNWebDAV.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC19DC22325719006A1760 /* SMRNWebDAV.m */; };
 		BEEC1A1622335C8A006A1760 /* LEOWebDAVUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC19F822335C88006A1760 /* LEOWebDAVUtility.m */; };
 		BEEC1A1722335C8A006A1760 /* LEOWebDAVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC19F922335C88006A1760 /* LEOWebDAVParser.m */; };
 		BEEC1A1822335C8A006A1760 /* LEOWebDAVItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC19FB22335C88006A1760 /* LEOWebDAVItem.m */; };
@@ -123,6 +123,10 @@
 		BEB4851021B649600023C13B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		BEB4851221B649780023C13B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BEB4851421B649DA0023C13B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BEC170EE223B97FF008246C7 /* SMWebDAVClientCompletion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMWebDAVClientCompletion.h; sourceTree = "<group>"; };
+		BEC170EF223B9C9C008246C7 /* ISMWebDAVItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMWebDAVItem.h; sourceTree = "<group>"; };
+		BEC170F0223B9CAB008246C7 /* SMWebDAVItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMWebDAVItem.h; sourceTree = "<group>"; };
+		BEC170F1223B9CAB008246C7 /* SMWebDAVItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMWebDAVItem.m; sourceTree = "<group>"; };
 		BEEAE11E21B790D0001E9C15 /* SMLogMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMLogMacros.h; sourceTree = "<group>"; };
 		BEEAE12021B794E5001E9C15 /* MSFilePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFilePath.h; sourceTree = "<group>"; };
 		BEEAE12121B794E5001E9C15 /* MSFilePath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFilePath.m; sourceTree = "<group>"; };
@@ -146,11 +150,9 @@
 		BEEAE14921BE2A60001E9C15 /* ISMServiceEntryLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMServiceEntryLoader.h; sourceTree = "<group>"; };
 		BEEAE15221C366BB001E9C15 /* SMMyfilesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMyfilesViewController.h; sourceTree = "<group>"; };
 		BEEAE15321C366BB001E9C15 /* SMMyfilesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMyfilesViewController.m; sourceTree = "<group>"; };
-		BEEC19DB22325719006A1760 /* SMTestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTestModule.h; sourceTree = "<group>"; };
-		BEEC19DC22325719006A1760 /* SMTestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTestModule.m; sourceTree = "<group>"; };
-		BEEC19E22232AC34006A1760 /* ISMNetSyncProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMNetSyncProtocol.h; sourceTree = "<group>"; };
-		BEEC19E62232AD16006A1760 /* SMNetSyncManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMNetSyncManager.h; sourceTree = "<group>"; };
-		BEEC19E72232AD16006A1760 /* SMNetSyncManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMNetSyncManager.m; sourceTree = "<group>"; };
+		BEEC19DB22325719006A1760 /* SMRNWebDAV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMRNWebDAV.h; sourceTree = "<group>"; };
+		BEEC19DC22325719006A1760 /* SMRNWebDAV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMRNWebDAV.m; sourceTree = "<group>"; };
+		BEEC19E22232AC34006A1760 /* ISMWebDAVProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMWebDAVProtocol.h; sourceTree = "<group>"; };
 		BEEC19F722335C88006A1760 /* LEOWebDAVMoveRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEOWebDAVMoveRequest.h; path = webdav/LEOWebDAVMoveRequest.h; sourceTree = "<group>"; };
 		BEEC19F822335C88006A1760 /* LEOWebDAVUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVUtility.m; path = webdav/LEOWebDAVUtility.m; sourceTree = "<group>"; };
 		BEEC19F922335C88006A1760 /* LEOWebDAVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEOWebDAVParser.m; path = webdav/LEOWebDAVParser.m; sourceTree = "<group>"; };
@@ -439,7 +441,7 @@
 		BEB484F221B382EC0023C13B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BEEC19E32232AC4F006A1760 /* NetSyncProtocol */,
+				BEEC19E32232AC4F006A1760 /* WebDAVProtocol */,
 				BEB484F321B383270023C13B /* ServiceCenter */,
 				BE15D7F721ECF02E00D0ED95 /* SMServices.plist */,
 			);
@@ -541,25 +543,26 @@
 		BEEC19DA223256DE006A1760 /* RN */ = {
 			isa = PBXGroup;
 			children = (
-				BEEC19DB22325719006A1760 /* SMTestModule.h */,
-				BEEC19DC22325719006A1760 /* SMTestModule.m */,
+				BEEC19DB22325719006A1760 /* SMRNWebDAV.h */,
+				BEEC19DC22325719006A1760 /* SMRNWebDAV.m */,
 			);
 			path = RN;
 			sourceTree = "<group>";
 		};
-		BEEC19E32232AC4F006A1760 /* NetSyncProtocol */ = {
+		BEEC19E32232AC4F006A1760 /* WebDAVProtocol */ = {
 			isa = PBXGroup;
 			children = (
 				BEEC19E52232ACB1006A1760 /* Implement */,
 				BEEC19E42232AC68006A1760 /* Interface */,
 			);
-			path = NetSyncProtocol;
+			path = WebDAVProtocol;
 			sourceTree = "<group>";
 		};
 		BEEC19E42232AC68006A1760 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				BEEC19E22232AC34006A1760 /* ISMNetSyncProtocol.h */,
+				BEEC19E22232AC34006A1760 /* ISMWebDAVProtocol.h */,
+				BEC170EF223B9C9C008246C7 /* ISMWebDAVItem.h */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -567,10 +570,11 @@
 		BEEC19E52232ACB1006A1760 /* Implement */ = {
 			isa = PBXGroup;
 			children = (
-				BEEC19E62232AD16006A1760 /* SMNetSyncManager.h */,
-				BEEC19E72232AD16006A1760 /* SMNetSyncManager.m */,
 				BEEC1A2522335D02006A1760 /* SMWebDAVClient.h */,
 				BEEC1A2622335D02006A1760 /* SMWebDAVClient.m */,
+				BEC170EE223B97FF008246C7 /* SMWebDAVClientCompletion.h */,
+				BEC170F0223B9CAB008246C7 /* SMWebDAVItem.h */,
+				BEC170F1223B9CAB008246C7 /* SMWebDAVItem.m */,
 			);
 			path = Implement;
 			sourceTree = "<group>";
@@ -878,7 +882,7 @@
 				BEEAE14521BE278A001E9C15 /* SMServiceManager.m in Sources */,
 				BEEC1A1722335C8A006A1760 /* LEOWebDAVParser.m in Sources */,
 				BEEAE13521BBF27C001E9C15 /* SMFileBrowserViewController.m in Sources */,
-				BEEC19DD22325719006A1760 /* SMTestModule.m in Sources */,
+				BEEC19DD22325719006A1760 /* SMRNWebDAV.m in Sources */,
 				BEEC1A1F22335C8A006A1760 /* LEOWebDAVPropertyRequest.m in Sources */,
 				BEEAE12221B794E5001E9C15 /* MSFilePath.m in Sources */,
 				BEEC1A1C22335C8A006A1760 /* LEOWebDAVDeleteRequest.m in Sources */,
@@ -891,6 +895,7 @@
 				BEB484E621B190E90023C13B /* SMRootViewController.m in Sources */,
 				BEEC1A2222335C8A006A1760 /* LEOWebDAVUploadRequest.m in Sources */,
 				BE15D7FC21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m in Sources */,
+				BEC170F2223B9CAB008246C7 /* SMWebDAVItem.m in Sources */,
 				BEEC1A2722335D02006A1760 /* SMWebDAVClient.m in Sources */,
 				BEEAE12C21BB62D4001E9C15 /* SMNavigationManager.m in Sources */,
 				BEEC1A2322335C8A006A1760 /* LEOWebDAVCopyRequest.m in Sources */,
@@ -903,7 +908,6 @@
 				BEEC1A1622335C8A006A1760 /* LEOWebDAVUtility.m in Sources */,
 				BEEC1A1D22335C8A006A1760 /* LEOWebDAVURL.m in Sources */,
 				BEEC1A1B22335C8A006A1760 /* LEOWebDAVBaseRequest.m in Sources */,
-				BEEC19E82232AD16006A1760 /* SMNetSyncManager.m in Sources */,
 				BEB4850921B647F80023C13B /* LogMarsImp.mm in Sources */,
 				BEEC1A1822335C8A006A1760 /* LEOWebDAVItem.m in Sources */,
 				BEEAE12521B7F6E7001E9C15 /* SMNavigationController.m in Sources */,
