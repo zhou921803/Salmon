@@ -27,7 +27,7 @@ target 'Salmon' do
   # Add any other subspecs you want to use in your project
   ]
   pod 'react-native-webview', :path => './SalmonRN/node_modules/react-native-webview'
-  
+  pod 'ReactNativeNavigation',:path => './SalmonRN/node_modules/react-native-navigation'
   pod 'yoga', :path => './SalmonRN/node_modules/react-native/ReactCommon/yoga'
   # Third party deps podspec link
   pod 'DoubleConversion', :podspec => './SalmonRN/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'

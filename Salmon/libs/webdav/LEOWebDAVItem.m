@@ -81,7 +81,7 @@
     if ([href hasPrefix:relativeRoot]) {
         temp=[temp substringFromIndex:relativeRoot.length ];
     }
-    if([root rangeOfString:@"%"].length == 0) {
+    if([root rangeOfString:@"%"].length == 0) { //没有 %号？
         temp = [temp stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     }
     _relativeHref=[[NSString alloc] initWithFormat:@"%@",temp];

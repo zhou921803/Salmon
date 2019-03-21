@@ -33,8 +33,9 @@ export default class SMFileItem extends React.PureComponent{
     }
 
     componentWillReceiveProps(nextProps){
+        this.fileItem = JSON.parse(nextProps.fileItem);
         let newState = {
-            displayName: nextProps.displayName
+            displayName: this.fileItem.displayName
         }
         this.setState(newState);
     }

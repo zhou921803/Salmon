@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: "flex-start",
-        alignItems: "center",
+        alignItems: "stretch",
         backgroundColor: "white",
         marginTop: 20
     },
@@ -40,6 +40,5 @@ const styles = StyleSheet.create({
 
     fileBrowser: {
         flex:1
-
     }
 })

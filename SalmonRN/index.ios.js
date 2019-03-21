@@ -22,8 +22,6 @@ class SalmonRNApp extends React.Component {
     this.state ={
       isOpen:true
     }
-
-
   }
 
   render() {
@@ -44,7 +42,7 @@ class SalmonRNApp extends React.Component {
       <SideMenu 
         menu={menu} 
         isOpen={this.state.isOpen}>
-        <SMContentView style={{flex:1, backgroundColor:"#0000F0"}} ></SMContentView>
+        <SMContentView style={{flex:1, backgroundColor:"#0000F0", marginTop:20}} ></SMContentView>
       </SideMenu>
     );
   }

@@ -4,6 +4,9 @@ import { WebView } from 'react-native-webview';
 import React from 'react';
 
 export default class SMWebView extends React.Component {
+
+
+
     constructor(props){
         super(props);
 

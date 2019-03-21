@@ -20,18 +20,19 @@ RCT_EXPORT_MODULE()
     
 }
 
-RCT_EXPORT_METHOD(configDAV:(NSDictionary*)params)
+RCT_EXPORT_METHOD(configDAV:(NSDictionary*)params
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-//    NSString *root=@"https://dav.jianguoyun.com/dav";
-//    NSString *user=@"zhou921803@163.com";
-//    NSString *password=@"axwdkcia37x6j4ed";
-    
-    
     NSString *root = [RCTConvert NSString:params[@"root"]];
     NSString *user = [RCTConvert NSString:params[@"user"]];
     NSString *password = [RCTConvert NSString:params[@"password"]];
     NSString *localMappingPath = [RCTConvert NSString:params[@"localMappingPath"]];
-    [SMService(ISMWebDAVProtocol) configClientWith:root userName:user passWord:password localMappingPath:localMappingPath];
+    if([SMService(ISMWebDAVProtocol) configClientWith:root userName:user passWord:password localMappingPath:localMappingPath]){
+        resolve(@(YES));
+    } else {
+        reject(@"", @"", [[NSError alloc] init]);
+    }
     return;
 }
 
@@ -46,6 +47,7 @@ RCT_EXPORT_METHOD(getPathProperty:(NSString*)subPath
             NSMutableArray *davItems = [[NSMutableArray alloc] initWithCapacity:5];
             
             for(NSUInteger index = 0; index < items.count; ++index){
+                
                 [davItems addObject:[items[index] toJsonString]];
             }
             
@@ -53,6 +55,19 @@ RCT_EXPORT_METHOD(getPathProperty:(NSString*)subPath
         }
     }];
     return;
+}
+
+RCT_EXPORT_METHOD(downloadFile:(NSString*)subPath
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+    [SMService(ISMWebDAVProtocol) downloadFile:subPath completion:^(NSError *error, NSString *downloadedPath) {
+        if(error){
+            reject(@"", @"", error);
+        } else {
+            resolve(downloadedPath);
+        }
+    }];
 }
 
 @end
