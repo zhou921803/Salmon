@@ -37,7 +37,6 @@ export default class SMWebView extends React.Component {
             {...this.props} 
             useWebKit={true}
             onShouldStartLoadWithRequest={(request)=>{
-                
                 return this.localProcess(request) ? false : true;
             }}
         >

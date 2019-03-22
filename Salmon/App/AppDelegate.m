@@ -132,12 +132,13 @@
 //    view.backgroundColor = [UIColor grayColor];
     
     NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://127.0.0.1:8081/index.ios.bundle?platform=ios"];
+                             URLWithString:@"http://172.28.29.31:8081/index.ios.bundle?platform=ios"];
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                          moduleName        : @"SalmonRNApp"
                          initialProperties :
      @{
+       
        }
                           launchOptions    : nil];
     rootView.frame = rootViewController.view.bounds;

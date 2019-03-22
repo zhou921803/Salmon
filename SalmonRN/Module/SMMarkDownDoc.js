@@ -5,23 +5,18 @@ export default class SMMarkDownDoc {
     constructor(absolutePath){
         this.absolutePath = absolutePath;
 
-
         this.fileCOntent = "";
         this.allRefResource = [];   
-
-        console.warn(absolutePath);
     }
 
     async loadFile(){
-        console.warn("1111");
         this.fileContent = await RNFS.readFile(this.absolutePath);
-        console.warn("this.fileContent");
         this._analyzeFileContent();
         this._downloadNecessaryResource();
 
         let mdRender = new MarkdownRender();
         let result = mdRender.mdRender(this.fileContent);
-        console.warn("2222");
+        console.warn(result);
         return result;
     }
 

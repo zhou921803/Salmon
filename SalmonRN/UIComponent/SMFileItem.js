@@ -5,7 +5,10 @@ import React from 'react';
 import {
     View, 
     TouchableOpacity,
-    Text
+    Text,
+    Image,
+    ImageBackground,
+    StyleSheet
 }from 'react-native';
 
 const PropTypes = require('prop-types');
@@ -17,14 +20,13 @@ export default class SMFileItem extends React.PureComponent{
 
     static propTypes = {
         ...View.propTypes,
-        fileItem: PropTypes.string,
+        fileItem: PropTypes.object,
         onItemSelect: PropTypes.func
     }
 
     constructor(props){
         super(props);
-        
-        this.fileItem = JSON.parse(this.props.fileItem);
+        this.fileItem = this.props.fileItem;
         // console.error(this.fileItem);
         this.state = {
             displayName: this.fileItem.displayName
@@ -33,7 +35,7 @@ export default class SMFileItem extends React.PureComponent{
     }
 
     componentWillReceiveProps(nextProps){
-        this.fileItem = JSON.parse(nextProps.fileItem);
+        this.fileItem = nextProps.fileItem;
         let newState = {
             displayName: this.fileItem.displayName
         }
@@ -48,14 +50,35 @@ export default class SMFileItem extends React.PureComponent{
     }
 
     render(){
+        let iconImage = this.fileItem.isFile ? require('../assets/file.png') : require('../assets/dir.png')
         return (
             <TouchableOpacity 
                 {...this.props}
+                style = {styles.container}
                 onPress={this.onSelected.bind(this)}
             >
-                <Text>{this.fileItem.displayName}</Text>
+                <Image source={iconImage} style={styles.icon}></Image>
+                <Text >{this.fileItem.displayName}</Text>
             </TouchableOpacity>
         );
         
     }
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flexDirection:'row',
+        justifyContent:'flex-start',
+        alignItems:'center',
+        backgroundColor:'white',
+        height: 25
+    },
+    icon:{
+        height: 16,
+        width: 16
+    },
+    displayName:{
+        flex:1,
+        paddingLeft:5
+    }
+})

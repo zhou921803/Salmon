@@ -48,11 +48,13 @@ export default class SMFileBrowser extends React.PureComponent{
     getPathProperty(filePath){
 
         NativeModules.SMRNWebDAV.getPathProperty(filePath).then((result)=>{
-
             this.currentPath = filePath;
 
+            //对返回的结果进行处理，目录文件分类
+            let resultProcessed = this._fileItemsProcess(result);
+
             let newState = {
-                fileItems:result
+                fileItems:resultProcessed
             };
 
             this.setState(newState);
@@ -85,8 +87,28 @@ export default class SMFileBrowser extends React.PureComponent{
     }
 
     _keyExtractor = (item, index) => item.relativePath;
+
+
+    _fileItemsProcess(fileItems){
+        //文件夹，文件排序，排除掉Res目录，
+        let dirItems = [];
+        let files = [];
+
+        fileItems.forEach(function(item,index,input){
+            let fileItem = JSON.parse(item);
+            if(fileItem.isDir){
+                dirItems.push(fileItem);
+            } else if(fileItem.isFile){
+                files.push(fileItem);
+            }
+        });
+
+        return dirItems.concat(files);
+
+    }
     
     render(){
+        const fileItemSeparator = <View style={styles.fileItemSeparator}></View>;
         return (
             <View 
                 {...this.props}
@@ -94,8 +116,9 @@ export default class SMFileBrowser extends React.PureComponent{
                 <FlatList 
                     style={styles.fileBrowser}
                     data={this.state.fileItems}
-                    renderItem={({item}) => <SMFileItem fileItem={item} onItemSelect={this.onFileItemSelect.bind(this)}></SMFileItem>}
+                    renderItem={({item}) => <SMFileItem id={item.relativePath} style={styles.fileItem} fileItem={item} onItemSelect={this.onFileItemSelect.bind(this)}></SMFileItem>}
                     keyExtractor={this._keyExtractor}
+                    
                 >
                 </FlatList>
 
@@ -108,7 +131,15 @@ export default class SMFileBrowser extends React.PureComponent{
 
 const styles = StyleSheet.create({
     fileBrowser : {
-        flex:1
+        flex:1,
+        backgroundColor:'silver'
+    },
+    fileItemSeparator:{
+        height:1,
+        backgroundColor:'silver'
+    },
+    fileItem:{
+        height: 25
     },
     backButton:{
         height: 30
