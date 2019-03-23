@@ -19,6 +19,8 @@
 #import "SMNavigationManager.h"
 #import "SMWebDAVClient.h"
 
+//#define USE_LOCAL_BUNDLE
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) SMWebDAVClient *client;
@@ -131,8 +133,13 @@
 //    UIView *view = [[UIView alloc] initWithFrame:rootViewController.view.frame];
 //    view.backgroundColor = [UIColor grayColor];
     
+#ifndef USE_LOCAL_BUNDLE
     NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://172.28.29.31:8081/index.ios.bundle?platform=ios"];
+                             URLWithString:@"http://192.168.1.102:8081/index.ios.bundle?platform=ios"];
+#else
+    
+    NSURL *jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+#endif
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                          moduleName        : @"SalmonRNApp"

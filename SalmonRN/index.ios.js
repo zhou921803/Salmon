@@ -26,16 +26,6 @@ class SalmonRNApp extends React.Component {
 
   render() {
 
-    // RNFS.readFile(this.props["filePath"]).then( (result) =>{
-    //   let mdRender = new MarkdownRender();
-    //   result = mdRender.mdRender(result);
-    //   let newStat = {
-    //     fileData:result,
-    //     isOpen:false
-    //   }
-    //   this.setState(newStat);
-    // });
-
     const menu = <SMSideView></SMSideView>;
 
     return (

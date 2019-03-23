@@ -28,9 +28,6 @@ export default class SMWebView extends React.Component {
         
     }
 
-
-
-
     render(){
         return (
         <WebView 

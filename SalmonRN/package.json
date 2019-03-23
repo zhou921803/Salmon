@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build_ios": "react-native bundle --entry-file index.ios.js --bundle-output ./release_ios/main.jsbundle --platform ios --assets-dest ./release_ios/ --dev flase"
   },
   "dependencies": {
+    "@shd101wyy/mume": "^0.3.8",
     "eslint-plugin-react-native-globals": "^0.1.2",
     "react": "^16.8.3",
     "react-native": "^0.59.1",

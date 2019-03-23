@@ -11,6 +11,7 @@
 		8545FC8729269D92CBBF82E7 /* libPods-Salmon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79727E637B08024040BAC68E /* libPods-Salmon.a */; };
 		BE15D7F821ECF02E00D0ED95 /* SMServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE15D7F721ECF02E00D0ED95 /* SMServices.plist */; };
 		BE15D7FC21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE15D7FB21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m */; };
+		BE8584C22244E43200187C93 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = BE8584C12244E43200187C93 /* main.jsbundle */; };
 		BEA8ABC921D8B33D000BACD7 /* SMServiceMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA8ABC821D8B33D000BACD7 /* SMServiceMediator.m */; };
 		BEB3A76C2192D59800673A6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB3A76B2192D59800673A6E /* AppDelegate.m */; };
 		BEB3A7722192D59800673A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB3A7702192D59800673A6E /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 		BE15D7F721ECF02E00D0ED95 /* SMServices.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SMServices.plist; sourceTree = "<group>"; };
 		BE15D7FA21ECF37F00D0ED95 /* SMPlistEntrtyLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPlistEntrtyLoader.h; sourceTree = "<group>"; };
 		BE15D7FB21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPlistEntrtyLoader.m; sourceTree = "<group>"; };
+		BE8584C12244E43200187C93 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		BEA8ABC721D8B33D000BACD7 /* SMServiceMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMServiceMediator.h; sourceTree = "<group>"; };
 		BEA8ABC821D8B33D000BACD7 /* SMServiceMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMServiceMediator.m; sourceTree = "<group>"; };
 		BEA8ABCA21D9DB7E000BACD7 /* Salmon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salmon.entitlements; sourceTree = "<group>"; };
@@ -250,6 +252,14 @@
 				BE15D7FB21ECF37F00D0ED95 /* SMPlistEntrtyLoader.m */,
 			);
 			path = Loader;
+			sourceTree = "<group>";
+		};
+		BE8584C02244E41000187C93 /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				BE8584C12244E43200187C93 /* main.jsbundle */,
+			);
+			path = bundle;
 			sourceTree = "<group>";
 		};
 		BEB3A75E2192D59800673A6E = {
@@ -543,6 +553,7 @@
 		BEEC19DA223256DE006A1760 /* RN */ = {
 			isa = PBXGroup;
 			children = (
+				BE8584C02244E41000187C93 /* bundle */,
 				BEEC19DB22325719006A1760 /* SMRNWebDAV.h */,
 				BEEC19DC22325719006A1760 /* SMRNWebDAV.m */,
 			);
@@ -762,6 +773,7 @@
 			files = (
 				BEB3A7772192D59A00673A6E /* LaunchScreen.storyboard in Resources */,
 				BEB3A7742192D59A00673A6E /* Assets.xcassets in Resources */,
+				BE8584C22244E43200187C93 /* main.jsbundle in Resources */,
 				BE15D7F821ECF02E00D0ED95 /* SMServices.plist in Resources */,
 				BEB3A7722192D59800673A6E /* Main.storyboard in Resources */,
 			);

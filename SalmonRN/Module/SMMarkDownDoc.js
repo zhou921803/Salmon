@@ -1,5 +1,6 @@
 import RNFS from'react-native-fs';
 import MarkdownRender from '../markdown-render/markdownRender';
+import MarkDownTemplate, {titleTag, contentTag} from '../assets/styles/MarkDownTemplate';
 
 export default class SMMarkDownDoc {
     constructor(absolutePath){
@@ -16,11 +17,10 @@ export default class SMMarkDownDoc {
 
         let mdRender = new MarkdownRender();
         let result = mdRender.mdRender(this.fileContent);
-        console.warn(result);
+        result = MarkDownTemplate.replace(contentTag, result);
+
         return result;
     }
-
-
 
     /**
      * 获取当前文档所有引用的 ./Res/ 下的资源

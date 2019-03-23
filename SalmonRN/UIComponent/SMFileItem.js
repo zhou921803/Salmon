@@ -50,7 +50,7 @@ export default class SMFileItem extends React.PureComponent{
     }
 
     render(){
-        let iconImage = this.fileItem.isFile ? require('../assets/file.png') : require('../assets/dir.png')
+        let iconImage = this.fileItem.isFile ? require('../assets/images/file.png') : require('../assets/images/dir.png')
         return (
             <TouchableOpacity 
                 {...this.props}
@@ -71,11 +71,11 @@ const styles = StyleSheet.create({
         justifyContent:'flex-start',
         alignItems:'center',
         backgroundColor:'white',
-        height: 25
+        height: 36
     },
     icon:{
-        height: 16,
-        width: 16
+        height: 24,
+        width: 24
     },
     displayName:{
         flex:1,
