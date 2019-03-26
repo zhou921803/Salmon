@@ -8,10 +8,6 @@ import SMSideView from './UIComponent/SMSideView';
 import Modal from 'react-native-modal'
 
 
-// import MarkPage from './markdown-render/markpage';
-import MarkdownRender from './markdown-render/markdownRender';
-import SMWebView from './UIComponent/SMWebView';
-
 
 
 class SalmonRNApp extends React.Component {

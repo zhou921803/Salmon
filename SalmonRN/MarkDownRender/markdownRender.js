@@ -3,6 +3,7 @@ import showdown from './showdown';
 
 export default class MarkdownRender{
     constructor(htmlTemplate){
+        
     }
 
     mdRender(mdContent){

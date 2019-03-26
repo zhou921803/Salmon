@@ -135,7 +135,7 @@
     
 #ifndef USE_LOCAL_BUNDLE
     NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://192.168.1.102:8081/index.ios.bundle?platform=ios"];
+                             URLWithString:@"http://127.0.0.1:8081/index.ios.bundle?platform=ios"];
 #else
     
     NSURL *jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
@@ -151,10 +151,7 @@
     rootView.frame = rootViewController.view.bounds;
     [rootViewController.view addSubview:rootView];
     
-    
-    
-    
-    
+
 //    [rootViewController test];
     
 //    [rootViewController NSSelectorFromString(@"test")];

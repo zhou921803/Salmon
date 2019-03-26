@@ -30,21 +30,41 @@ export default class SMContentView extends React.Component{
      * 打开文件
      */
     _onOpenFile = (filePath) => {
-        console.warn(filePath);
+        
         this.mdDoc = new SMMarkDownDoc(filePath);
+        
+        this.mdDoc.loadFileContent().then(()=>{
+            //完成文件加载
+            this.mdDoc.dependenceResource().then((result) => {
+                //完成依赖资源分析
 
-        this.mdDoc.loadFile().then( (result) => {
-            //加载分析完成，显示内容
-            let newState = {
-                webContent:result
-            }
+            }).catch();
 
-            this.setState(newState);
+            this.mdDoc.getHtmlContent(needReloadFromFile=false).then((result)=>{
+                //完成html渲染
+                let newState = {
+                    webContent:result
+                }
+    
+                this.setState(newState);
+            }).catch();
 
-        }).catch((error ) => { 
-            //显示加载错误
+        }).catch((error)=>{
+            console.warn(error);
+        });
 
-        })
+        // this.mdDoc.loadFile().then( (result) => {
+        //     //加载分析完成，显示内容
+        //     let newState = {
+        //         webContent:result
+        //     }
+
+        //     this.setState(newState);
+
+        // }).catch((error ) => { 
+        //     //显示加载错误
+
+        // })
     }
 
 

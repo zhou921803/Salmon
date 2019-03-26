@@ -1,9 +1,14 @@
-export const titleTag = '%{title}%';
-export const contentTag = '%{content}%';
 
-export default MarkDownTemplate = 
-`<!DOCTYPE html><html><head>
-    <title></title>
+export default class MarkDownTemplate {
+
+  constructor(){
+    this.title = "";
+    this.content = "";
+  }
+
+  render() {
+    return `<!DOCTYPE html><html><head>
+    <title>${this.title}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -20,7 +25,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
   font-family: Helvetica, arial, freesans, clean, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
   background-color: #fff;
@@ -55,31 +60,31 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 20px;
   color: #000;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
   border-bottom: 1px solid #ccc;
   color: #000;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h6 {
   color: #777;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
@@ -270,6 +275,8 @@ img {
   </head>
   <body for="html-export">
     <div class="mume markdown-preview">
-    %{content}%
+    ${this.content}
     </div>
   </body></html>`
+  }
+}

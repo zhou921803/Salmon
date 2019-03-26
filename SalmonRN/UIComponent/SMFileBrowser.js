@@ -70,8 +70,12 @@ export default class SMFileBrowser extends React.PureComponent{
             //下载文件，打开文件，渲染文件，显示文件
             // SMFileBrowserEvent.OpenFile.dispatch()
 
-            NativeModules.SMRNWebDAV.downloadFile(fileItem.relativePath).then((result) => {
-                SMFileBrowserEvent.OpenFile.dispatch(result);
+            NativeModules.SMRNWebDAV.downloadFile(fileItem.relativePath).then((localAbsolutePath) => {
+                let filePath = {
+                    davRelativePath:fileItem.relativePath,
+                    localPath:localAbsolutePath
+                }
+                SMFileBrowserEvent.OpenFile.dispatch(filePath);
             }).catch((error)=> {
 
             });
@@ -103,7 +107,8 @@ export default class SMFileBrowser extends React.PureComponent{
             }
         });
 
-        return dirItems.concat(files);
+        return files.concat(dirItems);
+        // return dirItems.concat(files);
 
     }
     

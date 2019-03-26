@@ -93,7 +93,7 @@ SINGLETON_DEF(SMWebDAVClient)
             // 创建文件首先需要一个文件管理对象
             NSFileManager *fileManager = [NSFileManager defaultManager];
             
-            NSString *filePath = [weakSelf.localMappingPath stringByAppendingPathComponent:request.path];
+            NSString *filePath = [weakSelf.localMappingPath stringByAppendingPathComponent:[request.path stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
             NSString *filePathDir = [filePath stringByDeletingLastPathComponent];
             
             [fileManager createDirectoryAtPath:filePathDir withIntermediateDirectories:YES attributes:nil error:nil];

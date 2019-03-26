@@ -33,6 +33,7 @@ export default class SMWebView extends React.Component {
         <WebView 
             {...this.props} 
             useWebKit={true}
+            originWhitelist={['*']}
             onShouldStartLoadWithRequest={(request)=>{
                 return this.localProcess(request) ? false : true;
             }}

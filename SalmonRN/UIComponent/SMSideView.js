@@ -17,7 +17,7 @@ export default class SMSideView extends React.Component{
                 style = {styles.container}
             >
                 <Text style={styles.textTitle}>目录</Text>
-                <SMFileBrowser style={styles.fileBrowser} browsePath={"/"}></SMFileBrowser>
+                <SMFileBrowser style={styles.fileBrowser} browsePath={"/我的坚果云/MarkDown"}></SMFileBrowser>
             </View>
         );
         
