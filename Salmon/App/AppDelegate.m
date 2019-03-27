@@ -135,7 +135,7 @@
     
 #ifndef USE_LOCAL_BUNDLE
     NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://127.0.0.1:8081/index.ios.bundle?platform=ios"];
+                             URLWithString:@"http://169.254.230.194:8081/index.ios.bundle?platform=ios"];
 #else
     
     NSURL *jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];

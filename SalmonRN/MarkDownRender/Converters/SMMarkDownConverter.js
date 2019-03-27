@@ -18,6 +18,7 @@ export default class SMMarkDownConverter {
      * 对转换前的markdown 文本内容进行处理
      */
     processBeforeConvert(){
+
         if(this.delegate){
 
             let regs = this.delegate.regProcessRule();

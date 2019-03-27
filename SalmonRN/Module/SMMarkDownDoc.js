@@ -3,9 +3,10 @@ import RNFS from'react-native-fs';
 import SMMarkDownRender from '../MarkDownRender/SMMarkDownRender';
 import MD5 from 'react-native-md5';
 import {SMMarkDownConverterDelegate} from '../MarkDownRender/Converters/SMMarkDownConverter'
-
+import SMConfigManager from './SMConfigManager';
+import SMPathConverter from './SMPathConverter';
 import {NativeModules} from 'react-native';
-
+import SMMarkDownDocEvent from './SMMarkDownDocEvent';
 
 
 export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
@@ -15,9 +16,11 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
         
         this.absolutePath = filePath.hasOwnProperty("localPath") ? filePath.localPath : null;
         this.davRelativePath = filePath.hasOwnProperty("davRelativePath") ? filePath.davRelativePath : null;
-        this.absolutePathDir = this.absolutePath.substring(0,  this.absolutePath.lastIndexOf('/'));
-        this.davRelativePathDir = this.davRelativePath.substring(0,this.davRelativePath.lastIndexOf('/'));
-        this.htmlFilePath = RNFS.TemporaryDirectoryPath  + MD5.hex_md5(this.absolutePath) + '.html'
+        this.absolutePathDir = this.absolutePath.substring(0,  this.absolutePath.lastIndexOf('/'));     //最后没有 /
+        this.davRelativePathDir = this.davRelativePath.substring(0,this.davRelativePath.lastIndexOf('/')); //最后没有 /
+        // this.htmlFilePath = SMConfigManager.getInstance().htmlCachePath + '/'  + MD5.hex_md5(this.absolutePath) + '.html'
+        this.htmlFilePath = this.absolutePathDir + '/' + MD5.hex_md5(this.absolutePath) + '.html';
+        // this.htmlFilePath = this.absolutePathDir + '/' + MD5.hex_md5(this.absolutePath) + '.html';
         this.fileContent = "";
         this.allRefResource = [];
 
@@ -42,7 +45,7 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
      * 获取html内容
      * @param {*} needReloadFromFile 
      */
-    async getHtmlContent(needReloadFromFile = true) {
+    async getHtml(needReloadFromFile = true) {
         
         if(needReloadFromFile){
             this.fileContent = await RNFS.readFile(this.absolutePath);
@@ -51,12 +54,14 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
         let mdRender = new SMMarkDownRender();
         mdRender.setDelegate(this);
         let htmlContent = await mdRender.render(this.fileContent);
-        // console.warn(htmlContent);
-        // console.warn(this.htmlFilePath);
-
         await RNFS.write(this.htmlFilePath, htmlContent);
-
-        return this.htmlFilePath;
+        let htmlInfo = {
+            docLocalPathDir: this.absolutePathDir,
+            htmlLocalPath: this.htmlFilePath,
+            httpUrl:SMPathConverter.getInstance().localPathToServerPath(this.htmlFilePath),
+        }
+        // console.warn(htmlInfo);
+        return htmlInfo;
     }
 
     /**
@@ -65,7 +70,7 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
      */
     async updateContentAndSave(fileContent){
         await RNFS.write(this.absolutePath, fileContent);
-        return await this.getHtmlContent();
+        return await this.getHtml();
     }
 
     /**
@@ -75,10 +80,13 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
     async updateContent(fileContent){
 
         this.fileContent = fileContent;
-        return await this.getHtmlContent(needReloadFromFile=false);
+        return await this.getHtml(needReloadFromFile=false);
 
     }
 
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //******** SMMarkDownConverterDelegate 回调 *********/
     /**
      * 正则匹配规则
      */
@@ -90,17 +98,25 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
                 processFunc:(arrayResult) => {  
 
                     if(! (arrayResult instanceof Array))return;
-
+                    let downloadItems = new Set();
                     arrayResult.forEach(element => {
                         let tempReg = /!\[.*\]\(.(\/Res\/.*)\)/;
                         let davFilePath = this.davRelativePathDir + tempReg.exec(element)[1].replace(/([\u4e00-\u9fa5])/g, (str) => encodeURIComponent(str) );
-                        NativeModules.SMRNWebDAV.downloadFile(davFilePath).then((result)=>{
-                            //刷新web页面？
-                            // console.warn(result);
-                        }).catch((error)=>{
+                        downloadItems.add(davFilePath);
+                    });
 
+                    for(let item of downloadItems){
+
+                        NativeModules.SMRNWebDAV.downloadFile(item).then((result)=>{
+                            //刷新web页面？
+                            // console.warn("download file Completed", SMMarkDownDocEvent.DownloadResourceCompleted);
+                            SMMarkDownDocEvent.DownloadResourceCompleted.dispatch();
+                        }).catch((error)=>{
+    
                         });
-                    })
+                    }
+
+                    
                     
                 }
 
@@ -118,7 +134,8 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
 
                         let tempReg = /(!\[.*\]\().(\/Res\/.*\))/;
                         let replaceString = element.replace(tempReg, "$1%path%$2");
-                        replaceString = replaceString.replace("%path%", "file://" + this.absolutePathDir);
+                        let webServerPath = SMPathConverter.getInstance().localPathToServerPath(this.absolutePathDir);
+                        replaceString = replaceString.replace("%path%", webServerPath);
 
                         let repalceItem = {
                             originStr: element,

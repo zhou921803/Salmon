@@ -7,6 +7,21 @@ import {View} from 'react-native';
 import SMWebView from './SMWebView'
 import {SMFileBrowserEvent} from './SMFileBrowserEvent';
 import SMMarkDownDoc from '../Module/SMMarkDownDoc'
+import {Enum} from '../lib/utils/enum';
+
+const SupportFileType = {
+    unknow:-1,
+    MarkDown:0,     //Markdown 文档
+    SourceCode:1,   //代码文件
+    Image:2,        //图片
+}
+
+//文件类型后缀，跟上面的文件类型顺序对应
+const FileTypePostFix = [
+    ['.md','.MD'], 
+    ['.c','.cpp', '.h','.hpp', '.m', '.mm'],
+    ['.png', '.jpg', 'gif']
+];
 
 export default class SMContentView extends React.Component{
     constructor(props){
@@ -14,7 +29,11 @@ export default class SMContentView extends React.Component{
         this.mdDoc = null;
 
         this.state = {
-            htmlLocalPath:""
+            htmlInfo:{
+                docLocalPathDir: "",
+                htmlLocalPath: "",
+                httpUrl:"",
+            }
         };
     }
 
@@ -31,20 +50,54 @@ export default class SMContentView extends React.Component{
      */
     _onOpenFile = (filePath) => {
         // console.warn(filePath);
+
+        let localPath = filePath.hasOwnProperty("localPath") ? filePath.localPath : null;
+
+        if(!localPath) return;
+
+        let filePostFix = localPath.substring( localPath.lastIndexOf('.') );
+        let fileType = SupportFileType.unknow;
+        // console.warn(filePostFix, fileType);
+        FileTypePostFix.some((postFixArray, index) => {
+            // console.warn(index, postFixArray);
+
+            if(-1 != postFixArray.indexOf(filePostFix)){
+                fileType = index;
+                // console.warn("finded ", fileType);
+                return true;
+            }
+        });
+
+        if(SupportFileType.MarkDown == fileType){
+            this._OpenMarkDown(filePath);
+        } else if(SupportFileType.SourceCode == fileType){
+            console.warn("Can Not Open SourceCode File");
+        } else if(SupportFileType.Image == fileType){
+            console.warn("Can Not Open Image File");
+        }
+
+    }
+
+    _OpenMarkDown(filePath){
+
+        // console.warn("_OpenMarkDown");
+
         this.mdDoc = new SMMarkDownDoc(filePath);
         
         this.mdDoc.loadFileContent().then(()=>{
             //完成文件加载
-            this.mdDoc.dependenceResource().then((result) => {
-                //完成依赖资源分析
+            // this.mdDoc.dependenceResource().then((result) => {
+            //     //完成依赖资源分析
 
-            }).catch();
+            // }).catch();
 
-            this.mdDoc.getHtmlContent(needReloadFromFile=false).then((htmlPath)=>{
+            this.mdDoc.getHtml(needReloadFromFile=false).then((htmlInfo)=>{
                 //完成html渲染
+
                 let newState = {
-                    htmlLocalPath:htmlPath
+                    htmlInfo:htmlInfo
                 }
+
     
                 this.setState(newState);
             }).catch();
@@ -52,19 +105,6 @@ export default class SMContentView extends React.Component{
         }).catch((error)=>{
             console.warn(error);
         });
-
-        // this.mdDoc.loadFile().then( (result) => {
-        //     //加载分析完成，显示内容
-        //     let newState = {
-        //         webContent:result
-        //     }
-
-        //     this.setState(newState);
-
-        // }).catch((error ) => { 
-        //     //显示加载错误
-
-        // })
     }
 
     render(){
@@ -73,7 +113,7 @@ export default class SMContentView extends React.Component{
             <View 
                 {...this.props}
             >
-                <SMWebView style={{flex:1}} source={{uri:this.state.htmlLocalPath}}>
+                <SMWebView style={{flex:1}} htmlInfo={this.state.htmlInfo}>
                 </SMWebView>
                 {/* <SMWebView style={{flex:1}} source={{html:this.state.webContent}}>
                 </SMWebView> */}

@@ -6,7 +6,8 @@ import SideMenu from 'react-native-side-menu';
 import SMContentView from './UIComponent/SMContentView';
 import SMSideView from './UIComponent/SMSideView';
 import Modal from 'react-native-modal'
-
+import SMPathConverter from './Module/SMPathConverter';
+import SMConfigManager from './Module/SMConfigManager';
 
 
 
@@ -18,6 +19,24 @@ class SalmonRNApp extends React.Component {
     this.state ={
       isOpen:true
     }
+
+    
+    this.appInit();
+
+    if(!__DEV__){
+      
+    }
+
+    console.disableYellowBox = true;
+  }
+
+  appInit(){
+    SMPathConverter.getInstance().configPath(
+      SMConfigManager.getInstance().localStorageRootPath, 
+      SMConfigManager.getInstance().webServerRootPath
+    );
+
+    NativeModules.SMRNWebServer.startServerAt(SMConfigManager.getInstance().localStorageRootPath)
   }
 
   render() {

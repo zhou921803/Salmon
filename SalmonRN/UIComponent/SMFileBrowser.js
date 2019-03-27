@@ -12,6 +12,7 @@ import {
 import RNFS from'react-native-fs';
 import SMFileItem from './SMFileItem';
 import {SMFileBrowserEvent} from './SMFileBrowserEvent';
+import SMConfigManager from '../Module/SMConfigManager';
 const PropTypes = require('prop-types');
 /**
  * 文件浏览器
@@ -28,11 +29,13 @@ export default class SMFileBrowser extends React.PureComponent{
 
         this.currentPath = this.props.browsePath;  //当前浏览的路径
 
+        let webDAVConfig = SMConfigManager.getInstance().webDAVConfig;
+
         NativeModules.SMRNWebDAV.configDAV({
-            "root":"https://dav.jianguoyun.com/dav",
-            "user":"zhou921803@163.com",
-            "password":"axwdkcia37x6j4ed",
-            "localMappingPath":RNFS.DocumentDirectoryPath
+            "root":webDAVConfig.root,
+            "user":webDAVConfig.user,
+            "password":webDAVConfig.password,
+            "localMappingPath":SMConfigManager.getInstance().localStorageRootPath
         });
       
         this.state = {
@@ -71,10 +74,13 @@ export default class SMFileBrowser extends React.PureComponent{
             // SMFileBrowserEvent.OpenFile.dispatch()
 
             NativeModules.SMRNWebDAV.downloadFile(fileItem.relativePath).then((localAbsolutePath) => {
+
+
                 let filePath = {
                     davRelativePath:fileItem.relativePath,
                     localPath:localAbsolutePath
                 }
+                
                 SMFileBrowserEvent.OpenFile.dispatch(filePath);
             }).catch((error)=> {
 

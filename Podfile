@@ -14,6 +14,8 @@ target 'Salmon' do
   # Pods for Salmon
   pod 'Bugly', '2.5.0'
   pod 'SVProgressHUD', '2.1.2'
+  pod 'GCDWebServer', '~> 3.0'
+
   
   pod'React', :path => './SalmonRN/node_modules/react-native', :subspecs => [
   'Core',
@@ -23,7 +25,7 @@ target 'Salmon' do
   'RCTNetwork',
   'RCTWebSocket', # Needed for debugging
   'RCTAnimation', # Needed for FlatList and animations running on native UI thread
-  'RCTImage'
+  'RCTImage',
   # Add any other subspecs you want to use in your project
   ]
   pod 'react-native-webview', :path => './SalmonRN/node_modules/react-native-webview'
