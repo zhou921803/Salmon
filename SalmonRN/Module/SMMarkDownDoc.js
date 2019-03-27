@@ -19,8 +19,11 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
         this.davRelativePathDir = this.davRelativePath.substring(0,this.davRelativePath.lastIndexOf('/'));
         this.htmlFilePath = RNFS.TemporaryDirectoryPath  + MD5.hex_md5(this.absolutePath) + '.html'
         this.fileContent = "";
-        this.htmlContent = "";
         this.allRefResource = [];
+
+        if(RNFS.exists(this.htmlFilePath)){
+            RNFS.unlink(this.htmlFilePath);
+        }
     }
 
     async loadFileContent(){
@@ -47,11 +50,13 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
         
         let mdRender = new SMMarkDownRender();
         mdRender.setDelegate(this);
-        this.htmlContent = await mdRender.render(this.fileContent);
+        let htmlContent = await mdRender.render(this.fileContent);
+        // console.warn(htmlContent);
+        // console.warn(this.htmlFilePath);
 
-        await RNFS.write(this.htmlFilePath, this.htmlContent);
+        await RNFS.write(this.htmlFilePath, htmlContent);
 
-        return this.htmlContent;
+        return this.htmlFilePath;
     }
 
     /**
@@ -91,7 +96,7 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
                         let davFilePath = this.davRelativePathDir + tempReg.exec(element)[1].replace(/([\u4e00-\u9fa5])/g, (str) => encodeURIComponent(str) );
                         NativeModules.SMRNWebDAV.downloadFile(davFilePath).then((result)=>{
                             //刷新web页面？
-                            console.warn(result);
+                            // console.warn(result);
                         }).catch((error)=>{
 
                         });
@@ -106,7 +111,7 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
                 processFunc: (arrayResult) => {
                     //返回一个字典，映射替换内容
                     let replaceMap = [];
-                    
+
                     if(! (arrayResult instanceof Array)) return;
 
                     arrayResult.forEach(element => {
@@ -127,30 +132,5 @@ export default class SMMarkDownDoc extends SMMarkDownConverterDelegate{
 
             }
         ];
-    }
-
-    /**
-     * 获取当前文档所有引用的 ./Res/ 下的资源
-     */
-    allRefResource(){
-
-    }
-
-    /**
-     * 分析文档内容，筛选出一系列的资源，比如引用的资源，标题信息？
-     */
-    _analyzeFileContent() {
-        this._analyzeRefResource();
-    }
-
-    _analyzeRefResource(){
-
-    }
-
-    /**
-     * 下载一些必要的资源，比如图片，gif等
-     */
-    async _downloadNecessaryResource(){
-
     }
 }

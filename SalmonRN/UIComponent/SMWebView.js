@@ -35,6 +35,8 @@ export default class SMWebView extends React.Component {
             useWebKit={true}
             originWhitelist={['*']}
             onShouldStartLoadWithRequest={(request)=>{
+                // console.warn("onShouldStartLoadWithRequest");
+                // console.warn(request);
                 return this.localProcess(request) ? false : true;
             }}
         >

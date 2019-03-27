@@ -19,7 +19,7 @@
 #import "SMNavigationManager.h"
 #import "SMWebDAVClient.h"
 
-//#define USE_LOCAL_BUNDLE
+#define USE_LOCAL_BUNDLE
 
 @interface AppDelegate ()
 

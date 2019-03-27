@@ -14,7 +14,7 @@ export default class SMContentView extends React.Component{
         this.mdDoc = null;
 
         this.state = {
-            webContent:"hello world"
+            htmlLocalPath:""
         };
     }
 
@@ -30,7 +30,7 @@ export default class SMContentView extends React.Component{
      * 打开文件
      */
     _onOpenFile = (filePath) => {
-        
+        // console.warn(filePath);
         this.mdDoc = new SMMarkDownDoc(filePath);
         
         this.mdDoc.loadFileContent().then(()=>{
@@ -40,10 +40,10 @@ export default class SMContentView extends React.Component{
 
             }).catch();
 
-            this.mdDoc.getHtmlContent(needReloadFromFile=false).then((result)=>{
+            this.mdDoc.getHtmlContent(needReloadFromFile=false).then((htmlPath)=>{
                 //完成html渲染
                 let newState = {
-                    webContent:result
+                    htmlLocalPath:htmlPath
                 }
     
                 this.setState(newState);
@@ -67,14 +67,16 @@ export default class SMContentView extends React.Component{
         // })
     }
 
-
     render(){
+        
         return (
             <View 
                 {...this.props}
             >
-                <SMWebView style={{flex:1}} source={{html:this.state.webContent}}>
+                <SMWebView style={{flex:1}} source={{uri:this.state.htmlLocalPath}}>
                 </SMWebView>
+                {/* <SMWebView style={{flex:1}} source={{html:this.state.webContent}}>
+                </SMWebView> */}
             </View>
         );
     }
