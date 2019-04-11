@@ -116,13 +116,13 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   GCDWebServer: ead88cd14596dd4eae4f5830b8877c87c8728990
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  React: 1d605e098d69bdf08960787f3446f0a9dc2e2ccf
-  react-native-webview: a42108b827082f8f0333529b0772102031d5960d
-  ReactNativeNavigation: 20522060de61b1c293ec50681a6aa11488596286
-  RNFS: bbb1a64eb245763daf34aea86f97c97c4e85f74c
+  React: 34a405ead72252839fdc4afc1f972a7ed984af84
+  react-native-webview: 01182c885fc982887e268ef3b1e0e5eac6bcc45c
+  ReactNativeNavigation: 60bb2ccea223cba134f87961c0efc05f25ee8426
+  RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
-  yoga: 128daf064cacaede0c3bb27424b6b4c71052e6cd
+  yoga: 8fb47f180b19b0dadb285a09e4c74c8a41721d3a
 
 PODFILE CHECKSUM: a8540e49f14a73fad2d159bbefea7e15ce60d7c8
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

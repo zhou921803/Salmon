@@ -1406,7 +1406,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _SMConfigManager = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[13], "./Module/SMConfigManager"));
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/index.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/index.ios.js";
 
   var SalmonRNApp = function (_React$Component) {
     (0, _inherits2.default)(SalmonRNApp, _React$Component);
@@ -1490,7 +1490,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   _reactNative.AppRegistry.registerComponent("SalmonRNApp", function () {
     return SalmonRNApp;
   });
-},0,[1,2,3,4,7,8,10,17,416,418,442,447,425,440],"index.ios.js");
+},0,[1,2,3,4,7,8,10,17,416,418,444,449,425,442],"index.ios.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
@@ -8434,7 +8434,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectWithoutProperties = _$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/objectWithoutProperties");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/ActivityIndicator/ActivityIndicator.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/ActivityIndicator/ActivityIndicator.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[3], "Platform");
 
@@ -11349,7 +11349,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _extends = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/extends");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/View/View.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/View/View.js";
 
   var React = _$$_REQUIRE(_dependencyMap[1], "React");
 
@@ -44282,7 +44282,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/UnimplementedViews/UnimplementedView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/UnimplementedViews/UnimplementedView.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -44340,7 +44340,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/ART/ReactNativeART.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/ART/ReactNativeART.js";
 
   var Color = _$$_REQUIRE(_dependencyMap[5], "art/core/color");
 
@@ -45927,7 +45927,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Button.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Button.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[6], "Platform");
 
@@ -46082,7 +46082,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectSpread = _$$_REQUIRE(_dependencyMap[7], "@babel/runtime/helpers/objectSpread");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Text/Text.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Text/Text.js";
 
   var DeprecatedTextPropTypes = _$$_REQUIRE(_dependencyMap[8], "DeprecatedTextPropTypes");
 
@@ -46508,7 +46508,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectSpread = _$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/objectSpread");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Touchable/Touchable.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Touchable/Touchable.js";
 
   var BoundingDimensions = _$$_REQUIRE(_dependencyMap[2], "BoundingDimensions");
 
@@ -47290,7 +47290,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Touchable/TouchableNativeFeedback.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Touchable/TouchableNativeFeedback.ios.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -47370,7 +47370,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectSpread = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/objectSpread");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Touchable/TouchableOpacity.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Touchable/TouchableOpacity.js";
 
   var Animated = _$$_REQUIRE(_dependencyMap[1], "Animated");
 
@@ -51715,7 +51715,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Animated/src/createAnimatedComponent.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Animated/src/createAnimatedComponent.js";
 
   var _require = _$$_REQUIRE(_dependencyMap[6], "./AnimatedEvent"),
       AnimatedEvent = _require.AnimatedEvent;
@@ -51920,7 +51920,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectSpread = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/objectSpread");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/FlatList.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/FlatList.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[7], "Platform");
 
@@ -52234,7 +52234,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[8], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/VirtualizedList.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/VirtualizedList.js";
 
   var Batchinator = _$$_REQUIRE(_dependencyMap[9], "Batchinator");
 
@@ -54089,7 +54089,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/RefreshControl/RefreshControl.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/RefreshControl/RefreshControl.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[7], "Platform");
 
@@ -54252,7 +54252,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectSpread = _$$_REQUIRE(_dependencyMap[7], "@babel/runtime/helpers/objectSpread");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js";
 
   var AnimatedImplementation = _$$_REQUIRE(_dependencyMap[8], "AnimatedImplementation");
 
@@ -55193,7 +55193,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader.js";
 
   var AnimatedImplementation = _$$_REQUIRE(_dependencyMap[5], "AnimatedImplementation");
 
@@ -55810,7 +55810,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _regeneratorRuntime = _$$_REQUIRE(_dependencyMap[1], "@babel/runtime/regenerator");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/Image.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/Image.ios.js";
 
   var DeprecatedImagePropType = _$$_REQUIRE(_dependencyMap[2], "DeprecatedImagePropType");
 
@@ -56017,7 +56017,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectSpread = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/objectSpread");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/SectionList.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/SectionList.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[7], "Platform");
 
@@ -56140,7 +56140,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[7], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/VirtualizedSectionList.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/VirtualizedSectionList.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[8], "Platform");
 
@@ -57311,7 +57311,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/DatePicker/DatePickerIOS.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/DatePicker/DatePickerIOS.ios.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -57445,7 +57445,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/ImageBackground.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/ImageBackground.js";
 
   var Image = _$$_REQUIRE(_dependencyMap[7], "Image");
 
@@ -57643,7 +57643,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/TextInput/InputAccessoryView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/TextInput/InputAccessoryView.js";
 
   var DeprecatedColorPropType = _$$_REQUIRE(_dependencyMap[5], "DeprecatedColorPropType");
 
@@ -57723,7 +57723,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Keyboard/KeyboardAvoidingView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Keyboard/KeyboardAvoidingView.js";
 
   var Keyboard = _$$_REQUIRE(_dependencyMap[7], "Keyboard");
 
@@ -57930,7 +57930,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _extends = _$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/extends");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/ListView/ListView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Lists/ListView/ListView.js";
 
   var InternalListViewType = _$$_REQUIRE(_dependencyMap[2], "InternalListViewType");
 
@@ -58838,7 +58838,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/MaskedView/MaskedViewIOS.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/MaskedView/MaskedViewIOS.ios.js";
 
   var React = _$$_REQUIRE(_dependencyMap[7], "React");
 
@@ -58932,7 +58932,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Modal/Modal.js",
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Modal/Modal.js",
       _container;
 
   var AppContainer = _$$_REQUIRE(_dependencyMap[6], "AppContainer");
@@ -59118,7 +59118,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/ReactNative/AppContainer.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/ReactNative/AppContainer.js";
 
   var EmitterSubscription = _$$_REQUIRE(_dependencyMap[5], "EmitterSubscription");
 
@@ -59295,7 +59295,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/Inspector.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/Inspector.js";
 
   var Dimensions = _$$_REQUIRE(_dependencyMap[5], "Dimensions");
 
@@ -59627,7 +59627,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/InspectorOverlay.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/InspectorOverlay.js";
 
   var Dimensions = _$$_REQUIRE(_dependencyMap[5], "Dimensions");
 
@@ -59739,7 +59739,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/ElementBox.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/ElementBox.js";
 
   var BorderBox = _$$_REQUIRE(_dependencyMap[6], "BorderBox");
 
@@ -59867,7 +59867,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/BorderBox.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/BorderBox.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -60036,7 +60036,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/InspectorPanel.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/InspectorPanel.js";
 
   var ElementProperties = _$$_REQUIRE(_dependencyMap[5], "ElementProperties");
 
@@ -60271,7 +60271,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/ElementProperties.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/ElementProperties.js";
 
   var BoxInspector = _$$_REQUIRE(_dependencyMap[5], "BoxInspector");
 
@@ -60477,7 +60477,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/BoxInspector.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/BoxInspector.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -60669,7 +60669,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/StyleInspector.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/StyleInspector.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -60771,7 +60771,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectSpread = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/objectSpread");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Touchable/TouchableHighlight.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Touchable/TouchableHighlight.js";
 
   var DeprecatedColorPropType = _$$_REQUIRE(_dependencyMap[1], "DeprecatedColorPropType");
 
@@ -61102,7 +61102,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/NetworkOverlay.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/NetworkOverlay.js";
 
   var FlatList = _$$_REQUIRE(_dependencyMap[5], "FlatList");
 
@@ -62045,7 +62045,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/PerformanceOverlay.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Inspector/PerformanceOverlay.js";
 
   var PerformanceLogger = _$$_REQUIRE(_dependencyMap[5], "PerformanceLogger");
 
@@ -62146,7 +62146,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/YellowBox.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/YellowBox.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -62350,7 +62350,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxList.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxList.js";
 
   var Dimensions = _$$_REQUIRE(_dependencyMap[7], "Dimensions");
 
@@ -62575,7 +62575,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/SafeAreaView/SafeAreaView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/SafeAreaView/SafeAreaView.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[7], "Platform");
 
@@ -62657,7 +62657,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxButton.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxButton.js";
 
   var React = _$$_REQUIRE(_dependencyMap[0], "React");
 
@@ -62717,7 +62717,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxPressable.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxPressable.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -62831,7 +62831,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspector.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspector.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[5], "Platform");
 
@@ -63092,7 +63092,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _toConsumableArray = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/toConsumableArray");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/Data/YellowBoxCategory.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/Data/YellowBoxCategory.js";
 
   var React = _$$_REQUIRE(_dependencyMap[1], "React");
 
@@ -63245,7 +63245,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspectorFooter.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspectorFooter.js";
 
   var React = _$$_REQUIRE(_dependencyMap[0], "React");
 
@@ -63352,7 +63352,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspectorHeader.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspectorHeader.js";
 
   var Image = _$$_REQUIRE(_dependencyMap[0], "Image");
 
@@ -63528,7 +63528,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspectorSourceMapStatus.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspectorSourceMapStatus.js";
 
   var Animated = _$$_REQUIRE(_dependencyMap[5], "Animated");
 
@@ -63708,7 +63708,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspectorStackFrame.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxInspectorStackFrame.js";
 
   var React = _$$_REQUIRE(_dependencyMap[0], "React");
 
@@ -63793,7 +63793,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxListRow.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/YellowBox/UI/YellowBoxListRow.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -64318,7 +64318,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Picker/Picker.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Picker/Picker.js";
 
   var PickerAndroid = _$$_REQUIRE(_dependencyMap[6], "PickerAndroid");
 
@@ -64418,7 +64418,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Picker/PickerIOS.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Picker/PickerIOS.ios.js";
 
   var React = _$$_REQUIRE(_dependencyMap[5], "React");
 
@@ -64554,7 +64554,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _extends = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/extends");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/ProgressViewIOS/ProgressViewIOS.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/ProgressViewIOS/ProgressViewIOS.ios.js";
 
   var React = _$$_REQUIRE(_dependencyMap[1], "React");
 
@@ -64605,7 +64605,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.js";
 
   var React = _$$_REQUIRE(_dependencyMap[7], "React");
 
@@ -64693,7 +64693,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectWithoutProperties = _$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/objectWithoutProperties");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Slider/Slider.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Slider/Slider.js";
 
   var Platform = _$$_REQUIRE(_dependencyMap[2], "Platform");
 
@@ -64791,7 +64791,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/RCTTest/SnapshotViewIOS.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/RCTTest/SnapshotViewIOS.ios.js";
 
   var React = _$$_REQUIRE(_dependencyMap[6], "React");
 
@@ -64881,7 +64881,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Switch/Switch.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/Switch/Switch.js";
 
   var SwitchNativeComponent = _$$_REQUIRE(_dependencyMap[7], "SwitchNativeComponent");
 
@@ -65326,7 +65326,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableFlatList.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableFlatList.js";
 
   var React = _$$_REQUIRE(_dependencyMap[7], "React");
 
@@ -65485,7 +65485,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableRow.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableRow.js";
 
   var Animated = _$$_REQUIRE(_dependencyMap[6], "Animated");
 
@@ -66042,7 +66042,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableListView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Experimental/SwipeableRow/SwipeableListView.js";
 
   var ListView = _$$_REQUIRE(_dependencyMap[6], "ListView");
 
@@ -66317,7 +66317,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _objectSpread = _$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/objectSpread");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/TextInput/TextInput.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/TextInput/TextInput.js";
 
   var DeprecatedColorPropType = _$$_REQUIRE(_dependencyMap[7], "DeprecatedColorPropType");
 
@@ -67368,7 +67368,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _inherits = _$$_REQUIRE(_dependencyMap[7], "@babel/runtime/helpers/inherits");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/WebView/WebView.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Components/WebView/WebView.ios.js";
 
   var ActivityIndicator = _$$_REQUIRE(_dependencyMap[8], "ActivityIndicator");
 
@@ -68300,7 +68300,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _PerformanceLogger = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "PerformanceLogger"));
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/ReactNative/renderApplication.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/ReactNative/renderApplication.js";
 
   var AppContainer = _$$_REQUIRE(_dependencyMap[3], "AppContainer");
 
@@ -68360,7 +68360,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/ReactNative/ReactFabricIndicator.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/ReactNative/ReactFabricIndicator.js";
 
   var React = _$$_REQUIRE(_dependencyMap[0], "React");
 
@@ -87975,7 +87975,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _enum = _$$_REQUIRE(_dependencyMap[12], "../lib/utils/enum");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/UIComponent/SMContentView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/UIComponent/SMContentView.js";
   var SupportFileType = {
     unknow: -1,
     MarkDown: 0,
@@ -88077,7 +88077,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }(_react.default.Component);
 
   exports.default = SMContentView;
-},418,[1,13,2,3,4,7,8,10,17,419,426,430,441],"UIComponent/SMContentView.js");
+},418,[1,13,2,3,4,7,8,10,17,419,426,432,443],"UIComponent/SMContentView.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   "use strict";
 
@@ -88114,7 +88114,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _SMMarkDownDocEvent = _$$_REQUIRE(_dependencyMap[13], "../Module/SMMarkDownDocEvent");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/UIComponent/SMWebView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/UIComponent/SMWebView.js";
 
   var PropTypes = _$$_REQUIRE(_dependencyMap[14], "prop-types");
 
@@ -88197,6 +88197,11 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         this.refs[this.webViewTag].goForward();
       }
     }, {
+      key: "reload",
+      value: function reload() {
+        this.refs[this.webViewTag].reload();
+      }
+    }, {
       key: "render",
       value: function render() {
         var _this2 = this;
@@ -88205,7 +88210,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           style: [this.props.style, styles.container],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 120
           }
         }), _react.default.createElement(_reactNativeWebview.WebView, {
           style: styles.webView,
@@ -88223,29 +88228,67 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           onNavigationStateChange: function onNavigationStateChange(webViewState) {},
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 117
+            lineNumber: 121
           }
         }), _react.default.createElement(_reactNative.View, {
-          style: styles.toolBar,
+          style: styles.rightTopToolBar,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 140
+            lineNumber: 145
           }
         }, _react.default.createElement(_reactNative.TouchableOpacity, {
+          style: styles.reloadButton,
+          onPress: function onPress() {
+            _this2.reload();
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 146
+          }
+        }, _react.default.createElement(_reactNative.Image, {
+          source: _$$_REQUIRE(_dependencyMap[15], "../assets/images/reload.png"),
+          style: styles.reloadButtonImg,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 147
+          }
+        }))), _react.default.createElement(_reactNative.View, {
+          style: styles.rightBottomToolBar,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 150
+          }
+        }, _react.default.createElement(_reactNative.TouchableOpacity, {
+          style: styles.goNextButton,
+          onPress: function onPress() {
+            _this2.goForward();
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 152
+          }
+        }, _react.default.createElement(_reactNative.Image, {
+          source: _$$_REQUIRE(_dependencyMap[16], "../assets/images/nextPage.png"),
+          style: styles.goNextButtonImg,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 153
+          }
+        })), _react.default.createElement(_reactNative.TouchableOpacity, {
           style: styles.goBackButton,
           onPress: function onPress() {
             _this2.goBack();
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 141
+            lineNumber: 155
           }
         }, _react.default.createElement(_reactNative.Image, {
-          source: _$$_REQUIRE(_dependencyMap[15], "../assets/images/prePage.png"),
+          source: _$$_REQUIRE(_dependencyMap[17], "../assets/images/prePage.png"),
           style: styles.goBackButtonImg,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 142
+            lineNumber: 156
           }
         }))));
       }
@@ -88266,12 +88309,35 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     webView: {
       flex: 1
     },
-    toolBar: {
-      height: 45,
+    rightTopToolBar: {
+      height: 40,
+      width: 40,
+      position: 'absolute',
+      top: 10,
+      right: 10
+    },
+    reloadButton: {
+      flex: 1
+    },
+    reloadButtonImg: {
+      width: 40,
+      height: 40,
+      opacity: 0.2
+    },
+    rightBottomToolBar: {
+      height: 135,
       width: 45,
       position: 'absolute',
       bottom: 10,
       right: 10
+    },
+    goNextButton: {
+      flex: 1
+    },
+    goNextButtonImg: {
+      width: 45,
+      height: 45,
+      opacity: 0.2
     },
     goBackButton: {
       flex: 1
@@ -88279,10 +88345,10 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     goBackButtonImg: {
       width: 45,
       height: 45,
-      opacity: 0.3
+      opacity: 0.2
     }
   });
-},419,[1,55,13,2,3,4,7,8,17,420,10,425,426,428,68,429],"UIComponent/SMWebView.js");
+},419,[1,55,13,2,3,4,7,8,17,420,10,425,426,428,68,429,430,431],"UIComponent/SMWebView.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -88325,7 +88391,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _WebViewShared = _$$_REQUIRE(_dependencyMap[12], "./WebViewShared");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native-webview/js/WebView.ios.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native-webview/js/WebView.ios.js";
   var resolveAssetSource = _reactNative.Image.resolveAssetSource;
   var didWarnAboutUIWebViewUsage = false;
 
@@ -89206,7 +89272,31 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.SMMarkDownDocEvent = SMMarkDownDocEvent;
 },428,[1,427],"Module/SMMarkDownDocEvent.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
-  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
+  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/assets/images",
+    "width": 128,
+    "height": 128,
+    "scales": [1],
+    "hash": "b8ece40f0326edc9c13285f5c9f4cbc7",
+    "name": "reload",
+    "type": "png"
+  });
+},429,[193],"assets/images/reload.png");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/assets/images",
+    "width": 128,
+    "height": 128,
+    "scales": [1],
+    "hash": "d0a287f91b02ff11f060aacc012578a7",
+    "name": "nextPage",
+    "type": "png"
+  });
+},430,[193],"assets/images/nextPage.png");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
     "httpServerLocation": "/assets/assets/images",
     "width": 128,
@@ -89216,7 +89306,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     "name": "prePage",
     "type": "png"
   });
-},429,[193],"assets/images/prePage.png");
+},431,[193],"assets/images/prePage.png");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -89472,7 +89562,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }(_SMMarkDownConverter.SMMarkDownConverterDelegate);
 
   exports.default = SMMarkDownDoc;
-},430,[1,109,2,3,4,7,8,431,434,439,436,440,425,17,428],"Module/SMMarkDownDoc.js");
+},432,[1,109,2,3,4,7,8,433,436,441,438,442,425,17,428],"Module/SMMarkDownDoc.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   'use strict';
 
@@ -89925,7 +90015,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     FileProtectionKeys: RNFSManager.RNFSFileProtectionKeys
   };
   module.exports = RNFS;
-},431,[55,17,432,433],"node_modules/react-native-fs/FS.common.js");
+},433,[55,17,434,435],"node_modules/react-native-fs/FS.common.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   ;
 
@@ -90043,7 +90133,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       root.base64 = base64;
     }
   })(this);
-},432,[],"node_modules/base-64/base64.js");
+},434,[],"node_modules/base-64/base64.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   ;
 
@@ -90272,7 +90362,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       root.utf8 = utf8;
     }
   })(this);
-},433,[],"node_modules/utf8/utf8.js");
+},435,[],"node_modules/utf8/utf8.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -90326,7 +90416,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }();
 
   exports.default = SMMarkDownRender;
-},434,[1,109,2,3,435],"MarkDownRender/SMMarkDownRender.js");
+},436,[1,109,2,3,437],"MarkDownRender/SMMarkDownRender.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -90383,7 +90473,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }(_SMMarkDownConverter2.default);
 
   exports.default = SMShowDownConverter;
-},435,[1,2,3,4,7,8,436,437,438],"MarkDownRender/Converters/ShowDown/SMShowDownConverter.js");
+},437,[1,2,3,4,7,8,438,439,440],"MarkDownRender/Converters/ShowDown/SMShowDownConverter.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -90487,7 +90577,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }();
 
   exports.SMMarkDownConverterDelegate = SMMarkDownConverterDelegate;
-},436,[1,2,3],"MarkDownRender/Converters/SMMarkDownConverter.js");
+},438,[1,2,3],"MarkDownRender/Converters/SMMarkDownConverter.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   (function () {
     function a(a) {
@@ -91337,7 +91427,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       return d;
     }) : i.showdown = d;
   }).call(this);
-},437,[],"MarkDownRender/Converters/ShowDown/showdown.js");
+},439,[],"MarkDownRender/Converters/ShowDown/showdown.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -91367,7 +91457,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }();
 
   exports.default = MarkDownTemplate;
-},438,[1,2,3],"assets/styles/MarkDownTemplate.js");
+},440,[1,2,3],"assets/styles/MarkDownTemplate.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var hexcase = 0;
   var b64pad = "";
@@ -91579,7 +91669,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
     return str;
   }
-},439,[],"node_modules/react-native-md5/index.js");
+},441,[],"node_modules/react-native-md5/index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -91623,7 +91713,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }();
 
   exports.default = SMConfigManager;
-},440,[1,2,3,431],"Module/SMConfigManager.js");
+},442,[1,2,3,433],"Module/SMConfigManager.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -91635,7 +91725,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       this[arguments[i]] = Number(i);
     }
   }
-},441,[],"lib/utils/enum.js");
+},443,[],"lib/utils/enum.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   "use strict";
 
@@ -91664,7 +91754,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _SMFileBrowser = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[9], "./SMFileBrowser"));
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/UIComponent/SMSideView.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/UIComponent/SMSideView.js";
 
   var SMSideView = function (_React$Component) {
     (0, _inherits2.default)(SMSideView, _React$Component);
@@ -91720,7 +91810,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       flex: 1
     }
   });
-},442,[1,13,2,3,4,7,8,10,17,443],"UIComponent/SMSideView.js");
+},444,[1,13,2,3,4,7,8,10,17,445],"UIComponent/SMSideView.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   "use strict";
 
@@ -91757,7 +91847,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _SMConfigManager = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[13], "../Module/SMConfigManager"));
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/UIComponent/SMFileBrowser.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/UIComponent/SMFileBrowser.js";
 
   var PropTypes = _$$_REQUIRE(_dependencyMap[14], "prop-types");
 
@@ -91929,7 +92019,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       height: 30
     }
   });
-},443,[1,55,13,2,3,4,7,8,10,17,431,444,426,440,68],"UIComponent/SMFileBrowser.js");
+},445,[1,55,13,2,3,4,7,8,10,17,433,446,426,442,68],"UIComponent/SMFileBrowser.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   "use strict";
 
@@ -91958,7 +92048,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _reactNative = _$$_REQUIRE(_dependencyMap[9], "react-native");
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/UIComponent/SMFileItem.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/UIComponent/SMFileItem.js";
 
   var PropTypes = _$$_REQUIRE(_dependencyMap[10], "prop-types");
 
@@ -92045,9 +92135,9 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       paddingLeft: 5
     }
   });
-},444,[1,55,13,2,3,4,7,8,10,17,68,445,446],"UIComponent/SMFileItem.js");
+},446,[1,55,13,2,3,4,7,8,10,17,68,447,448],"UIComponent/SMFileItem.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
-  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
+  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
     "httpServerLocation": "/assets/assets/images",
     "width": 64,
@@ -92057,9 +92147,9 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     "name": "file",
     "type": "png"
   });
-},445,[193],"assets/images/file.png");
+},447,[193],"assets/images/file.png");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
-  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
+  module.exports = _$$_REQUIRE(_dependencyMap[0], "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
     "httpServerLocation": "/assets/assets/images",
     "width": 64,
@@ -92069,7 +92159,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     "name": "dir",
     "type": "png"
   });
-},446,[193],"assets/images/dir.png");
+},448,[193],"assets/images/dir.png");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -92108,7 +92198,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _indexStyle = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[15], "./index.style.js"));
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native-modal/src/index.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native-modal/src/index.js";
   (0, _utils.initializeAnimations)();
 
   var ReactNativeModal = function (_Component) {
@@ -92656,7 +92746,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
   var _default = ReactNativeModal;
   exports.default = _default;
-},447,[1,448,13,24,55,2,3,4,7,8,10,17,68,449,470,471],"node_modules/react-native-modal/src/index.js");
+},449,[1,450,13,24,55,2,3,4,7,8,10,17,68,451,472,473],"node_modules/react-native-modal/src/index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   function _interopRequireWildcard(obj) {
     if (obj && obj.__esModule) {
@@ -92684,7 +92774,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   }
 
   module.exports = _interopRequireWildcard;
-},448,[],"node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+},450,[],"node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireWildcard = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireWildcard");
 
@@ -92732,7 +92822,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.Text = Text;
   var Image = (0, _createAnimatableComponent.default)(_reactNative.Image);
   exports.Image = Image;
-},449,[448,1,17,450,456,458,455],"node_modules/react-native-animatable/index.js");
+},451,[450,1,17,452,458,460,457],"node_modules/react-native-animatable/index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -92777,7 +92867,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _easing = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[18], "./easing"));
 
-  var _jsxFileName = "/Users/zhouzhengyan/Documents/Salmon/SalmonRN/node_modules/react-native-animatable/createAnimatableComponent.js";
+  var _jsxFileName = "/Users/abc/Documents/GitHub/Salmon/SalmonRN/node_modules/react-native-animatable/createAnimatableComponent.js";
   var INTERPOLATION_STYLE_PROPERTIES = ['rotate', 'rotateX', 'rotateY', 'rotateZ', 'skewX', 'skewY', 'transformMatrix', 'backgroundColor', 'borderColor', 'borderTopColor', 'borderRightColor', 'borderBottomColor', 'borderLeftColor', 'shadowColor', 'color', 'textDecorationColor', 'tintColor'];
   var ZERO_CLAMPED_STYLE_PROPERTIES = ['width', 'height'];
 
@@ -93302,7 +93392,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       useNativeDriver: false
     }, _temp;
   }
-},450,[1,448,55,2,3,4,7,6,8,13,10,68,17,451,452,453,455,456,457],"node_modules/react-native-animatable/createAnimatableComponent.js");
+},452,[1,450,55,2,3,4,7,6,8,13,10,68,17,453,454,455,457,458,459],"node_modules/react-native-animatable/createAnimatableComponent.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93330,7 +93420,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     });
     return wrapped;
   }
-},451,[1,56],"node_modules/react-native-animatable/wrapStyleTransforms.js");
+},453,[1,56],"node_modules/react-native-animatable/wrapStyleTransforms.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93351,7 +93441,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     });
     return values;
   }
-},452,[1,453,454],"node_modules/react-native-animatable/getStyleValues.js");
+},454,[1,455,456],"node_modules/react-native-animatable/getStyleValues.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93377,7 +93467,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
     return flatStyle;
   }
-},453,[1,13,17],"node_modules/react-native-animatable/flattenStyle.js");
+},455,[1,13,17],"node_modules/react-native-animatable/flattenStyle.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -93437,7 +93527,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
     return 0;
   }
-},454,[],"node_modules/react-native-animatable/getDefaultStyleValue.js");
+},456,[],"node_modules/react-native-animatable/getDefaultStyleValue.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93535,7 +93625,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     cache[cacheKey] = compiled;
     return compiled;
   }
-},455,[1,453],"node_modules/react-native-animatable/createAnimation.js");
+},457,[1,455],"node_modules/react-native-animatable/createAnimation.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -93568,7 +93658,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       registerAnimation(animationName, (0, _createAnimation.default)(definitions[animationName]));
     });
   }
-},456,[1,455],"node_modules/react-native-animatable/registry.js");
+},458,[1,457],"node_modules/react-native-animatable/registry.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -93610,7 +93700,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   };
   var _default = EASING_FUNCTIONS;
   exports.default = _default;
-},457,[17],"node_modules/react-native-animatable/easing.js");
+},459,[17],"node_modules/react-native-animatable/easing.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -93747,7 +93837,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       }
     });
   });
-},458,[459,460,461,462,463,464,465,466,467,468,469],"node_modules/react-native-animatable/definitions/index.js");
+},460,[461,462,463,464,465,466,467,468,469,470,471],"node_modules/react-native-animatable/definitions/index.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -94035,7 +94125,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
   };
   exports.wobble = wobble;
-},459,[],"node_modules/react-native-animatable/definitions/attention-seekers.js");
+},461,[],"node_modules/react-native-animatable/definitions/attention-seekers.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -94145,7 +94235,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
   };
   exports.bounceInLeft = bounceInLeft;
-},460,[],"node_modules/react-native-animatable/definitions/bouncing-entrances.js");
+},462,[],"node_modules/react-native-animatable/definitions/bouncing-entrances.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -94268,7 +94358,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
   };
   exports.bounceOutLeft = bounceOutLeft;
-},461,[],"node_modules/react-native-animatable/definitions/bouncing-exits.js");
+},463,[],"node_modules/react-native-animatable/definitions/bouncing-exits.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94315,7 +94405,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.fadeInLeftBig = fadeInLeftBig;
   var fadeInRightBig = makeFadeInTranslation('translateX', 500);
   exports.fadeInRightBig = fadeInRightBig;
-},462,[1,56],"node_modules/react-native-animatable/definitions/fading-entrances.js");
+},464,[1,56],"node_modules/react-native-animatable/definitions/fading-entrances.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94362,7 +94452,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.fadeOutLeftBig = fadeOutLeftBig;
   var fadeOutRightBig = makeFadeOutTranslation('translateX', 500);
   exports.fadeOutRightBig = fadeOutRightBig;
-},463,[1,56],"node_modules/react-native-animatable/definitions/fading-exits.js");
+},465,[1,56],"node_modules/react-native-animatable/definitions/fading-exits.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -94458,7 +94548,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
   };
   exports.flipOutY = flipOutY;
-},464,[],"node_modules/react-native-animatable/definitions/flippers.js");
+},466,[],"node_modules/react-native-animatable/definitions/flippers.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -94500,7 +94590,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
   };
   exports.lightSpeedOut = lightSpeedOut;
-},465,[],"node_modules/react-native-animatable/definitions/lightspeed.js");
+},467,[],"node_modules/react-native-animatable/definitions/lightspeed.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94526,7 +94616,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.slideInLeft = slideInLeft;
   var slideInRight = makeSlideInTranslation('translateX', 100);
   exports.slideInRight = slideInRight;
-},466,[1,56],"node_modules/react-native-animatable/definitions/sliding-entrances.js");
+},468,[1,56],"node_modules/react-native-animatable/definitions/sliding-entrances.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94552,7 +94642,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.slideOutLeft = slideOutLeft;
   var slideOutRight = makeSlideOutTranslation('translateX', 100);
   exports.slideOutRight = slideOutRight;
-},467,[1,56],"node_modules/react-native-animatable/definitions/sliding-exits.js");
+},469,[1,56],"node_modules/react-native-animatable/definitions/sliding-exits.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94605,7 +94695,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.zoomInLeft = zoomInLeft;
   var zoomInRight = makeZoomInTranslation('translateX', -10);
   exports.zoomInRight = zoomInRight;
-},468,[1,56,17],"node_modules/react-native-animatable/definitions/zooming-entrances.js");
+},470,[1,56,17],"node_modules/react-native-animatable/definitions/zooming-entrances.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
 
@@ -94660,7 +94750,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   exports.zoomOutLeft = zoomOutLeft;
   var zoomOutRight = makeZoomOutTranslation('translateX', -10);
   exports.zoomOutRight = zoomOutRight;
-},469,[1,56,17],"node_modules/react-native-animatable/definitions/zooming-exits.js");
+},471,[1,56,17],"node_modules/react-native-animatable/definitions/zooming-exits.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   var _interopRequireWildcard = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireWildcard");
 
@@ -94738,7 +94828,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   var isObject = function isObject(obj) {
     return obj !== null && typeof obj === "object";
   };
-},470,[448,1,56,17,449],"node_modules/react-native-modal/src/utils.js");
+},472,[450,1,56,17,451],"node_modules/react-native-modal/src/utils.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -94764,6 +94854,6 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   });
 
   exports.default = _default;
-},471,[17],"node_modules/react-native-modal/src/index.style.js");
+},473,[17],"node_modules/react-native-modal/src/index.style.js");
 __r(92);
 __r(0);

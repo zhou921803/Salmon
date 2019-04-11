@@ -21,6 +21,8 @@
 
 #define USE_LOCAL_BUNDLE
 
+NSString *ipAddr = @"169.254.59.102";
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) SMWebDAVClient *client;
@@ -134,8 +136,9 @@
 //    view.backgroundColor = [UIColor grayColor];
     
 #ifndef USE_LOCAL_BUNDLE
+    NSString *url = [NSString stringWithFormat:@"http://%@:8081/index.ios.bundle?platform=ios", ipAddr];
     NSURL *jsCodeLocation = [NSURL
-                             URLWithString:@"http://169.254.230.194:8081/index.ios.bundle?platform=ios"];
+                             URLWithString:url];
 #else
     
     NSURL *jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];

@@ -860,7 +860,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Salmon/Pods-Salmon-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Salmon/Pods-Salmon-resources.sh",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -869,7 +869,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Salmon/Pods-Salmon-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Salmon/Pods-Salmon-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBA5418257E6EAC897D9BB8F /* [CP] Check Pods Manifest.lock */ = {

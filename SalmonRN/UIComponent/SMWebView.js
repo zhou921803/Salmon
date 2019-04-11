@@ -111,6 +111,10 @@ export default class SMWebView extends React.Component {
         this.refs[this.webViewTag].goForward();
     }
 
+    reload(){
+        this.refs[this.webViewTag].reload();
+    }
+
     render(){
         return (
         <View {...this.props} style={[this.props.style,styles.container]}>
@@ -137,7 +141,17 @@ export default class SMWebView extends React.Component {
             >
             </WebView>
             {/* <Button style={styles.toolBar} onPress={()=> this.goBack()} title={"后退"}></Button> */}
-            <View style={styles.toolBar}>
+
+            <View style={styles.rightTopToolBar}>
+                <TouchableOpacity style={styles.reloadButton} onPress={()=>{this.reload()}}>
+                    <Image source={require('../assets/images/reload.png')} style={styles.reloadButtonImg}></Image>
+                </TouchableOpacity>
+            </View>
+            <View style={styles.rightBottomToolBar}>
+            
+                <TouchableOpacity style={styles.goNextButton} onPress={()=>{this.goForward()}}>
+                    <Image source={require('../assets/images/nextPage.png')} style={styles.goNextButtonImg}></Image>
+                </TouchableOpacity>
                 <TouchableOpacity style={styles.goBackButton} onPress={()=>{this.goBack()}}>
                     <Image source={require('../assets/images/prePage.png')} style={styles.goBackButtonImg}></Image>
                 </TouchableOpacity>
@@ -157,20 +171,47 @@ const styles = StyleSheet.create({
     webView: {
         flex:1
     },
-    toolBar:{
-        height:45, 
+    rightTopToolBar:{
+        height:40, 
+        width:40, 
+        position:'absolute', 
+        top:10,
+        right:10,
+    },
+
+    reloadButton:{
+        flex:1
+    },
+    reloadButtonImg:{
+        width:40,
+        height:40,
+        opacity: 0.2
+    },
+
+    rightBottomToolBar:{
+        height:135, 
         width:45, 
         position:'absolute', 
         bottom:10,
         right:10,
         // backgroundColor:'rgba(150, 152, 153 ,0.2)'
     },
+
+    goNextButton:{
+        flex:1
+    },
+    goNextButtonImg:{
+        width:45,
+        height:45,
+        opacity: 0.2
+    },
     goBackButton:{
         flex:1
     },
+    
     goBackButtonImg:{
         width:45,
         height:45,
-        opacity: 0.3
+        opacity: 0.2
     }
 })
